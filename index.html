@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aegis International Digital Academy</title>
+  <title>Aegis Digital Academy</title>
   <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
 </head>
 <body>
 
 <header>
-  <h1>Aegis International Digital Academy</h1>
+  <h1>Aegis Digital Academy</h1>
   <nav>
-    <a href="academy.html">Academy</a>
-    <a href="primary.html">Primary</a>
-    <a href="secondary.html">Secondary</a>
-    <a href="military.html">Military</a>
-    <a href="sports.html">Sports</a>
-    <a href="music.html">Music</a>
-    <a href="parents.html">Parents</a>
-    <a href="pricing.html">Admissions</a>
-    <a href="about.html">About</a>
+    <a onclick="go('home')">Home</a>
+    <a onclick="go('about')">About</a>
+    <a onclick="go('academy')">Academy</a>
+    <a onclick="go('primary')">Primary</a>
+    <a onclick="go('secondary')">Secondary</a>
+    <a onclick="go('military')">Military</a>
+    <a onclick="go('sports')">Sports</a>
+    <a onclick="go('music')">Music</a>
+    <a onclick="go('parents')">Parents</a>
+    <a onclick="go('pricing')">Admissions</a>
+    <a onclick="go('features')">Features</a>
+    <a onclick="go('certifications')">Certifications</a>
   </nav>
 </header>
 
-<div class="hero">
-  <h2>The World’s First Elite Digital School</h2>
-  <p>
-    A premium digital academy delivering primary and secondary education,
-    AI-powered tutoring, military discipline, creativity, and full parental oversight.
-  </p>
-</div>
+<main>
+  <section id="home" class="page active hero">
+    <h2>World-Class Digital School for Kids & Teens</h2>
+    <p>AI Tutors • Human Teachers • Parent Oversight • Leadership & Creativity</p>
+    <button onclick="go('academy')">Explore Academy</button>
+    <button class="outline" onclick="showDemo()">Free Demo</button>
+  </section>
+</main>
 
-<section class="cards">
-  <div class="card"><h3>🎓 International Curriculum</h3><p>Globally respected academic standards.</p></div>
-  <div class="card"><h3>🤖 AI + Human Tutors</h3><p>Personalized learning at scale.</p></div>
-  <div class="card"><h3>🛡 Military Discipline</h3><p>Leadership, structure & resilience.</p></div>
-  <div class="card"><h3>👨‍👩‍👧 Parent Monitoring</h3><p>Real-time progress & behavior tracking.</p></div>
-</section>
-
-<footer>© Aegis International Digital Academy</footer>
+<footer>© 2026 Aegis Digital Academy</footer>
 </body>
 </html>
