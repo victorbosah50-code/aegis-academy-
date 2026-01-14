@@ -1,37 +1,24 @@
-function toggleAITutor() {
-  const modal = document.getElementById("aiModal");
-  modal.style.display = modal.style.display === "block" ? "none" : "block";
+// =========================
+// app.js
+// =========================
+function navigate(page) {
+  document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+  document.getElementById(page).classList.add("active");
 }
 
-// Payment
-function payBasic() {
-  const subjects = document.getElementById("basicSubjects").value;
+function calculateBasic() {
   const hours = document.getElementById("basicHours").value;
-  if (!subjects || !hours) return alert("Enter subjects & hours");
-
-  const amount = subjects * hours * 20000 * 100;
-  payWithPaystack(amount);
+  const total = hours * 20000;
+  document.getElementById("basicTotal").innerText =
+    hours ? `Total: ₦${total.toLocaleString()}` : "";
 }
 
-function payPro() {
+function calculatePro() {
   const hours = document.getElementById("proHours").value;
-  if (!hours) return alert("Enter hours");
-  const amount = hours * 50000 * 100;
-  payWithPaystack(amount);
+  const total = hours * 50000;
+  document.getElementById("proTotal").innerText =
+    hours ? `Total: ₦${total.toLocaleString()}` : "";
 }
 
-function payWithPaystack(amount) {
-  let handler = PaystackPop.setup({
-    key: "pk_test_xxxxxxxxxxxxx",
-    email: "parent@aegisacademy.com",
-    amount: amount,
-    currency: "NGN",
-    callback: function(response) {
-      alert("Payment Successful: " + response.reference);
-    },
-    onClose: function() {
-      alert("Payment Cancelled");
-    },
-  });
-  handler.openIframe();
-}
+// default page
+navigate("home");
