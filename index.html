@@ -1,173 +1,41 @@
-<!-- =========================
-index.html
-========================= -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Aegis Digital Academy™</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Aegis International Digital Academy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">Aegis™ Digital Academy</div>
+<header>
+  <h1>Aegis International Digital Academy</h1>
   <nav>
-    <button onclick="navigate('home')">Home</button>
-    <button onclick="navigate('academy')">Academy</button>
-    <button onclick="navigate('primary')">Primary</button>
-    <button onclick="navigate('secondary')">Secondary</button>
-    <button onclick="navigate('military')">Military</button>
-    <button onclick="navigate('sports')">Sports</button>
-    <button onclick="navigate('music')">Music</button>
-    <button onclick="navigate('parents')">Parents</button>
-    <button onclick="navigate('pricing')">Pricing</button>
-    <button onclick="navigate('about')">About</button>
+    <a href="academy.html">Academy</a>
+    <a href="primary.html">Primary</a>
+    <a href="secondary.html">Secondary</a>
+    <a href="military.html">Military</a>
+    <a href="sports.html">Sports</a>
+    <a href="music.html">Music</a>
+    <a href="parents.html">Parents</a>
+    <a href="pricing.html">Admissions</a>
+    <a href="about.html">About</a>
   </nav>
 </header>
 
-<main id="app">
-
-<!-- HOME -->
-<section id="home" class="page active">
-  <h1>World-Class Digital Education for the Future</h1>
-  <p>Primary • Secondary • AI Tutors • Elite Human Teachers • Parent Control</p>
-  <div class="cards">
-    <div class="card">🎓 AI + Human Tutors</div>
-    <div class="card">👨‍👩‍👧 Parent Monitoring</div>
-    <div class="card">🛡 Military Discipline</div>
-    <div class="card">⚽ Sports & Talent</div>
-    <div class="card">🎵 Music & Creativity</div>
-  </div>
-</section>
-
-<!-- ACADEMY -->
-<section id="academy" class="page">
-  <h2>Digital Academy</h2>
-  <p>A complete online school for after-school lessons and full-time learning.</p>
-  <ul>
-    <li>International Teachers</li>
-    <li>AI Personal Tutors (Human-like)</li>
-    <li>Daily Progress Tracking</li>
-    <li>Recognized Graduation Path</li>
-  </ul>
-</section>
-
-<!-- PRIMARY -->
-<section id="primary" class="page">
-  <h2>Primary Education</h2>
-  <p>Foundational learning with AI personalization.</p>
-  <div class="subjects">
-    <label><input type="checkbox"> Mathematics</label>
-    <label><input type="checkbox"> English</label>
-    <label><input type="checkbox"> Science</label>
-    <label><input type="checkbox"> Reading & Phonics</label>
-    <label><input type="checkbox"> Coding Basics</label>
-  </div>
-</section>
-
-<!-- SECONDARY -->
-<section id="secondary" class="page">
-  <h2>Secondary Education</h2>
-  <p>Advanced global curriculum with exam preparation.</p>
-  <div class="subjects">
-    <label><input type="checkbox"> Mathematics</label>
-    <label><input type="checkbox"> Physics</label>
-    <label><input type="checkbox"> Chemistry</label>
-    <label><input type="checkbox"> Biology</label>
-    <label><input type="checkbox"> Computer Science</label>
-    <label><input type="checkbox"> Leadership Studies</label>
-  </div>
-</section>
-
-<!-- MILITARY -->
-<section id="military" class="page military">
-  <h2>Military & Discipline Academy</h2>
-  <p>Leadership, discipline, cybersecurity, fitness & strategic thinking.</p>
-  <ul>
-    <li>Military-Standard Discipline</li>
-    <li>Cybersecurity Fundamentals</li>
-    <li>Physical & Mental Training</li>
-    <li>Leadership Psychology</li>
-  </ul>
-</section>
-
-<!-- SPORTS -->
-<section id="sports" class="page sports">
-  <h2>Sports & Talent Development</h2>
-  <p>Professional sports coaching & physical intelligence.</p>
-  <ul>
-    <li>Football</li>
-    <li>Basketball</li>
-    <li>Athletics</li>
-    <li>Martial Arts</li>
-  </ul>
-</section>
-
-<!-- MUSIC -->
-<section id="music" class="page music">
-  <h2>Music & Creative Arts</h2>
-  <p>Instrument mastery and creative expression.</p>
-  <ul>
-    <li>Piano</li>
-    <li>Violin</li>
-    <li>Guitar</li>
-    <li>Music Theory</li>
-  </ul>
-</section>
-
-<!-- PARENTS -->
-<section id="parents" class="page parents">
-  <h2>Parents Control Center</h2>
-  <p>Full visibility without the child knowing.</p>
-  <ul>
-    <li>Live Progress Monitoring</li>
-    <li>Behavior & Character Analysis</li>
-    <li>AI Reports & Alerts</li>
-    <li>Facial Recognition Login (Mother & Father)</li>
-  </ul>
-</section>
-
-<!-- PRICING -->
-<section id="pricing" class="page pricing">
-  <h2>Pricing</h2>
-
-  <div class="price-card">
-    <h3>Free Demo</h3>
-    <p>Explore all features & lesson previews.</p>
-  </div>
-
-  <div class="price-card">
-    <h3>Basic</h3>
-    <p>₦20,000 / subject / hour</p>
-    <input id="basicHours" type="number" placeholder="Hours" />
-    <button onclick="calculateBasic()">Calculate</button>
-    <p id="basicTotal"></p>
-  </div>
-
-  <div class="price-card premium">
-    <h3>Professional</h3>
-    <p>₦50,000 / hour</p>
-    <input id="proHours" type="number" placeholder="Hours" />
-    <button onclick="calculatePro()">Calculate</button>
-    <p id="proTotal"></p>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="page">
-  <h2>About Aegis Academy</h2>
+<div class="hero">
+  <h2>The World’s First Elite Digital School</h2>
   <p>
-    Aegis Digital Academy is built to become the most respected online
-    primary and secondary education institution in the world —
-    combining AI intelligence, elite human teachers, military discipline,
-    creativity, and parental control.
+    A premium digital academy delivering primary and secondary education,
+    AI-powered tutoring, military discipline, creativity, and full parental oversight.
   </p>
+</div>
+
+<section class="cards">
+  <div class="card"><h3>🎓 International Curriculum</h3><p>Globally respected academic standards.</p></div>
+  <div class="card"><h3>🤖 AI + Human Tutors</h3><p>Personalized learning at scale.</p></div>
+  <div class="card"><h3>🛡 Military Discipline</h3><p>Leadership, structure & resilience.</p></div>
+  <div class="card"><h3>👨‍👩‍👧 Parent Monitoring</h3><p>Real-time progress & behavior tracking.</p></div>
 </section>
 
-</main>
-
-<script src="app.js"></script>
+<footer>© Aegis International Digital Academy</footer>
 </body>
 </html>
