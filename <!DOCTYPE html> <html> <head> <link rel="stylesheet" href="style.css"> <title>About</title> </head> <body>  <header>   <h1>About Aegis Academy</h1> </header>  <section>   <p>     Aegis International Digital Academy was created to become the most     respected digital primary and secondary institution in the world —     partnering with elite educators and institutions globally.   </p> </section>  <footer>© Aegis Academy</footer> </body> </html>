@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>About</title>
+</head>
+<body>
+
+<header>
+  <h1>About Aegis Academy</h1>
+</header>
+
+<section>
+  <p>
+    Aegis International Digital Academy was created to become the most
+    respected digital primary and secondary institution in the world —
+    partnering with elite educators and institutions globally.
+  </p>
+</section>
+
+<footer>© Aegis Academy</footer>
+</body>
+</html>
