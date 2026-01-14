@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+<title>Admissions</title>
+</head>
+<body>
+
+<header>
+  <h1>Admissions & Tuition</h1>
+</header>
+
+<section class="cards">
+  <div class="card">
+    <h3>Free Trial</h3>
+    <p>Platform preview & sample lessons</p>
+  </div>
+
+  <div class="card">
+    <h3>Basic</h3>
+    <div class="price">₦20,000 / hour</div>
+    <input id="basicHours" type="number" placeholder="Hours">
+    <button onclick="calculateBasic()">Calculate</button>
+    <p id="basicResult"></p>
+  </div>
+
+  <div class="card">
+    <h3>Professional</h3>
+    <div class="price">₦50,000 / hour</div>
+    <input id="proHours" type="number" placeholder="Hours">
+    <button onclick="calculatePro()">Calculate</button>
+    <p id="proResult"></p>
+  </div>
+</section>
+
+<footer>© Aegis Academy</footer>
+</body>
+</html>
