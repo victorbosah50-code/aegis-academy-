@@ -1,39 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-<script src="app.js"></script>
-<title>Admissions</title>
-</head>
-<body>
-
-<header>
-  <h1>Admissions & Tuition</h1>
-</header>
-
-<section class="cards">
-  <div class="card">
-    <h3>Free Trial</h3>
-    <p>Platform preview & sample lessons</p>
-  </div>
-
-  <div class="card">
-    <h3>Basic</h3>
-    <div class="price">₦20,000 / hour</div>
-    <input id="basicHours" type="number" placeholder="Hours">
-    <button onclick="calculateBasic()">Calculate</button>
-    <p id="basicResult"></p>
-  </div>
-
-  <div class="card">
-    <h3>Professional</h3>
-    <div class="price">₦50,000 / hour</div>
-    <input id="proHours" type="number" placeholder="Hours">
-    <button onclick="calculatePro()">Calculate</button>
-    <p id="proResult"></p>
+<section id="pricing" class="page">
+  <h2>Admissions & Pricing</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Free Trial</h3>
+      <p>See our platform and lesson structure before enrollment.</p>
+      <button onclick="showDemo()">View Demo</button>
+    </div>
+    <div class="card">
+      <h3>Basic</h3>
+      <input id="basicHours" type="number" placeholder="Hours">
+      <button onclick="calculateBasic()">Calculate</button>
+      <p id="basicResult"></p>
+    </div>
+    <div class="card">
+      <h3>Professional</h3>
+      <input id="proHours" type="number" placeholder="Hours">
+      <button onclick="calculatePro()">Calculate</button>
+      <p id="proResult"></p>
+    </div>
+    <div class="card">
+      <h3>Premium</h3>
+      <p>Contact Victor Borsa with your email & number of children for personalized pricing.</p>
+    </div>
   </div>
 </section>
-
-<footer>© Aegis Academy</footer>
-</body>
-</html>
