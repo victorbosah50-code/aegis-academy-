@@ -1,14 +1,22 @@
-function payBasic() {
-  let hours = document.getElementById("basicHours").value;
-  let amount = hours * 20000 * 100;
+function toggleAITutor() {
+  const modal = document.getElementById("aiModal");
+  modal.style.display = modal.style.display === "block" ? "none" : "block";
+}
 
+// Payment
+function payBasic() {
+  const subjects = document.getElementById("basicSubjects").value;
+  const hours = document.getElementById("basicHours").value;
+  if (!subjects || !hours) return alert("Enter subjects & hours");
+
+  const amount = subjects * hours * 20000 * 100;
   payWithPaystack(amount);
 }
 
 function payPro() {
-  let hours = document.getElementById("proHours").value;
-  let amount = hours * 50000 * 100;
-
+  const hours = document.getElementById("proHours").value;
+  if (!hours) return alert("Enter hours");
+  const amount = hours * 50000 * 100;
   payWithPaystack(amount);
 }
 
@@ -19,12 +27,11 @@ function payWithPaystack(amount) {
     amount: amount,
     currency: "NGN",
     callback: function(response) {
-      alert("Payment successful: " + response.reference);
+      alert("Payment Successful: " + response.reference);
     },
     onClose: function() {
-      alert("Transaction cancelled");
-    }
+      alert("Payment Cancelled");
+    },
   });
-
   handler.openIframe();
 }
