@@ -1,18 +1,87 @@
+<!-- primary.html (Primary School) -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Primary School</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary School – EduOS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-text">Edu<span class="highlight">OS</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html" class="active">Primary School</a></li>
+          <li><a href="secondary.html">Secondary School</a></li>
+          <li><a href="military.html">Military Academy</a></li>
+          <li><a href="sports.html">Sports & Fitness</a></li>
+          <li><a href="music.html">Music & Creative Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="parents.html">Parent Dashboard</a></li>
+      <li><a href="pricing.html">Pricing & Demo</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+    </div>
+  </nav>
 
-<div id="nav-placeholder"></div>
+  <!-- Hero -->
+  <header class="hero hero-sub">
+    <div class="hero-content">
+      <h1>Primary School Program</h1>
+      <p class="lead">Building strong foundations with engaging, AI-personalized learning for ages 5-11.</p>
+    </div>
+  </header>
 
-<section class="hero">
-  <h1>Primary Education</h1>
-  <p>Play-based learning, AI tutors, global teachers. Ages 4–10.</p>
-</section>
+  <!-- Content -->
+  <section class="content-section">
+    <div class="container">
+      <h2>Core Curriculum</h2>
+      <p>Interactive modules in Math, Science, Language, and Social Studies, with gamified progress tracking.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Adaptive Math</h3>
+          <p>From basics to advanced concepts, adjusted by AI.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Exploratory Science</h3>
+          <p>Virtual labs and experiments for young minds.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Language Mastery</h3>
+          <p>Reading, writing, and multilingual options.</p>
+        </div>
+      </div>
+      <h2>Personalization & Analytics</h2>
+      <p>AI placeholders for tutors, parent reports, and scholarship recommendations.</p>
+    </div>
+  </section>
 
-<script src="app.js"></script>
+  <section class="cta-section">
+    <div class="container">
+      <h2>Enroll in Primary Today</h2>
+      <a href="pricing.html" class="btn btn-primary btn-large">Sign Up</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 EduOS – The Digital Education Operating System</p>
+      <p class="small">Scalable, reliable, and ready for global impact.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
