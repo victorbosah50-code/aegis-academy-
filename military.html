@@ -1,4 +1,3 @@
-<!-- military.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,43 +7,62 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation (identical) -->
-  <nav class="navbar">… same as above …</nav>
+  <nav class="navbar">
+    <!-- same navigation -->
+    <div class="logo"><span class="logo-text">Edu<span class="highlight">OS</span></span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs</a>
+        <div class="dropdown-content">
+          <a href="primary.html">Primary Excellence</a>
+          <a href="secondary.html">Secondary Scholars</a>
+          <a href="military.html" class="active">Military Leadership Academy</a>
+          <a href="sports.html">Elite Athletics & Wellness</a>
+          <a href="music.html">Conservatory of Arts</a>
+        </div>
+      </li>
+      <li><a href="parents.html">Parent Command</a></li>
+      <li><a href="pricing.html">Plans & Access</a></li>
+      <li><a href="about.html">Vision</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="pricing.html" class="btn btn-outline">Request Private Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Begin Journey</a>
+    </div>
+  </nav>
 
   <header class="hero hero-sub">
     <div class="hero-content">
-      <div class="eyebrow">Formation of Command</div>
+      <div class="eyebrow">Command Formation</div>
       <h1>Military Leadership Academy</h1>
-      <h2 class="subtitle">Where character is forged and strategic minds are cultivated</h2>
+      <h2 class="subtitle">Forging principled leaders for decisive moments</h2>
     </div>
   </header>
 
   <section class="section features">
     <div class="container">
-      <h2 class="section-title">The Science & Art of Leadership Under Pressure</h2>
+      <h2 class="section-title">Core Pillars of Distinction</h2>
 
       <div class="feature-grid">
         <div class="feature-card">
-          <div class="feature-icon">Compass</div>
           <h3>Strategic Decision Architecture</h3>
           <p>Advanced scenario simulation and war-game methodology for real-world complexity.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">Shield</div>
           <h3>Moral & Ethical Command Training</h3>
-          <p>Deliberate cultivation of integrity and principled decision-making under stress.</p>
+          <p>Deliberate cultivation of integrity and principled decision-making under extreme pressure.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">Mountain</div>
           <h3>Extreme Resilience Development</h3>
           <p>Physical, mental, and emotional conditioning protocols used by global elite forces.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">Star</div>
           <h3>Officer Candidate Pathway</h3>
           <p>Direct preparation for the world's most selective military academies and leadership programs.</p>
         </div>
@@ -60,7 +78,9 @@
     </div>
   </section>
 
-  <footer class="footer">… same as before …</footer>
+  <footer class="footer">
+    <!-- same footer -->
+  </footer>
 
   <script src="app.js"></script>
 </body>
