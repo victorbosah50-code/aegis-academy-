@@ -1,67 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Admissions & Pricing | Aegis</title>
+  <title>Pricing</title>
   <link rel="stylesheet" href="style.css">
   <script src="app.js"></script>
 </head>
 <body>
 
 <header>
-  <h1>Admissions & Pricing</h1>
+  <h1>Pricing & Enrollment</h1>
   <nav>
     <a href="index.html">Home</a>
-    <a href="academy.html">Academy</a>
   </nav>
 </header>
 
-<section class="page">
-  <h2>Choose the Right Plan for Your Child</h2>
-
+<section class="section">
   <div class="cards">
 
     <div class="card">
-      <h3>🎓 Free Demo</h3>
-      <p>Explore our teaching style, curriculum, and platform before enrolling.</p>
-      <button onclick="alert('Demo includes platform tour & lesson previews')">
-        Start Free Demo
-      </button>
+      <h3>Free Demo</h3>
+      <p>Explore all programs with limited access.</p>
+      <button class="btn" onclick="openDemo()">Start Free Demo</button>
     </div>
 
     <div class="card">
-      <h3>Basic Plan</h3>
-      <p>
-        • Online group lessons  
-        • Qualified international teachers  
-        • ₦20,000 per subject / hour
-      </p>
-      <input type="number" id="basicHours" placeholder="Hours">
-      <button onclick="calculateBasic()">Calculate</button>
-      <p id="basicResult"></p>
+      <h3>Standard Plan</h3>
+      <p>Primary OR Secondary education + AI tutor.</p>
+      <button class="btn" onclick="contactEnrollment('Standard')">Request Pricing</button>
     </div>
 
     <div class="card">
-      <h3>Professional Plan</h3>
-      <p>
-        • Private 1-on-1 lessons  
-        • Senior educators & specialists  
-        • ₦50,000 per subject / hour
-      </p>
-      <input type="number" id="proHours" placeholder="Hours">
-      <button onclick="calculatePro()">Calculate</button>
-      <p id="proResult"></p>
-    </div>
-
-    <div class="card">
-      <h3>Premium / Elite</h3>
-      <p>
-        Full-time digital schooling, parent dashboard, leadership tracks,
-        military & global certification.
-      </p>
-      <p>
-        📩 Contact <strong>Victor Borsa</strong><br>
-        Email your child count & needs to receive a tailored plan.
-      </p>
+      <h3>Elite Plan</h3>
+      <p>All programs + Military + Sports + Parent Dashboard.</p>
+      <button class="btn" onclick="contactEnrollment('Elite')">Request Pricing</button>
     </div>
 
   </div>
