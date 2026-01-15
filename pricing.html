@@ -1,45 +1,181 @@
-<!-- pricing.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pricing – EduOS</title>
+  <title>Pricing & Plans – EduOS</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation (same as other pages) -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-text">Edu<span class="highlight">OS</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs</a>
+        <div class="dropdown-content">
+          <a href="primary.html">Primary Excellence</a>
+          <a href="secondary.html">Secondary Scholars</a>
+          <a href="military.html">Military Leadership Academy</a>
+          <a href="sports.html">Elite Athletics & Wellness</a>
+          <a href="music.html">Conservatory of Arts</a>
+        </div>
+      </li>
+      <li><a href="parents.html">Parent Command</a></li>
+      <li><a href="pricing.html" class="active">Plans & Access</a></li>
+      <li><a href="about.html">Vision</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="pricing.html" class="btn btn-outline">Request Private Demo</a>
+      <a href="#" class="btn btn-primary">Begin Journey</a>
+    </div>
+  </nav>
 
+  <!-- Hero -->
   <header class="hero hero-sub">
     <div class="hero-content">
-      <div class="eyebrow">Elite Access</div>
+      <div class="eyebrow">Choose Your Path to Excellence</div>
       <h1>Pricing & Plans</h1>
-      <h2 class="subtitle">Invest in Top-Rank Education</h2>
+      <h2 class="subtitle">Flexible, transparent, and built for serious families & institutions</h2>
     </div>
   </header>
 
-  <section class="content-section">
+  <!-- Main Pricing Section with Comparison Table -->
+  <section class="section pricing-section">
     <div class="container">
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>Legacy Plan</h3>
-          <p class="price">$99/year</p>
-          <ul>
-            <li>Core Access</li>
-            <!-- Add features -->
-          </ul>
-          <a href="#" class="btn btn-primary">Choose Legacy</a>
-        </div>
-        <!-- Add Premium and Institutional -->
+
+      <!-- Comparison Table -->
+      <div class="pricing-comparison">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="plan-title">Legacy</th>
+              <th class="plan-title featured">Signature <span class="most-popular">Most Popular</span></th>
+              <th class="plan-title">Sovereign Institutional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">Price (billed annually)</td>
+              <td>$588 <span class="small">($49/month)</span></td>
+              <td>$948 <span class="small">($79/month)</span></td>
+              <td>Custom</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Free 30-Day Trial / Private Demo</td>
+              <td><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Programs Access</td>
+              <td>Primary + Secondary</td>
+              <td><strong>All 5 Elite Programs</strong></td>
+              <td>All 5 + Custom</td>
+            </tr>
+            <tr>
+              <td class="feature-name">AI-Personalized Learning Paths</td>
+              <td>Basic</td>
+              <td><strong>Advanced + Priority AI</strong></td>
+              <td>Full + Custom Training</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Parent Command Center</td>
+              <td>Core Analytics</td>
+              <td><strong>Full Predictive + Controls</strong></td>
+              <td>Enterprise Dashboard + API</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Scholarship & Opportunity Matching</td>
+              <td>Basic Alerts</td>
+              <td><strong>Automated + Priority</strong></td>
+              <td>Institutional Matching</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Children per Account</td>
+              <td>1</td>
+              <td><strong>Up to 3</strong></td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Dedicated Success Concierge</td>
+              <td>—</td>
+              <td><strong>✓</strong></td>
+              <td><strong>Priority 24/7</strong></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Data Residency & Compliance</td>
+              <td>Standard</td>
+              <td>Standard + Options</td>
+              <td><strong>Custom (SOC 2, GDPR, etc.)</strong></td>
+            </tr>
+            <tr>
+              <td class="feature-name">White-label & API Access</td>
+              <td>—</td>
+              <td>—</td>
+              <td><strong>✓</strong></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="#" class="btn btn-outline">Choose Legacy</a></td>
+              <td><a href="#" class="btn btn-primary">Choose Signature</a></td>
+              <td><a href="#" class="btn btn-primary">Contact Sales</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+
+      <!-- Free Trial / Demo Section -->
+      <div class="free-trial-box">
+        <h2>Start with 30-Day Free Trial or Private Demo</h2>
+        <p class="lead">Experience the full platform risk-free — no credit card required for trial/demo.</p>
+        <ul class="trial-features">
+          <li>Full access to all Signature features during trial</li>
+          <li>Personalized onboarding session (30–45 min)</li>
+          <li>Live walkthrough of Parent Command Center</li>
+          <li>Priority support during trial period</li>
+          <li>Cancel anytime — no commitment</li>
+        </ul>
+        <div class="trial-buttons">
+          <a href="#" class="btn btn-primary btn-large">Start 30-Day Free Trial</a>
+          <a href="#" class="btn btn-outline btn-large">Request Private Demo</a>
+        </div>
+        <p class="small-note">Most families convert within the first 14 days. Limited spots for personalized demos.</p>
+      </div>
+
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- Final CTA -->
+  <section class="section cta-final">
+    <div class="container">
+      <h2>Invest in Your Child's Future Today</h2>
+      <p class="large">Choose the plan that matches your vision of excellence.</p>
+    </div>
+  </section>
 
   <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo">Edu<span class="highlight">OS</span></div>
+        <p>Digital Excellence Inspired by Tradition</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 EduOS – All Rights Reserved</p>
+        <p class="disclaimer">Crafted for the Elite Pursuit of Knowledge</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>
