@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
@@ -8,8 +9,12 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 60px;
   background: #050814;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
@@ -17,6 +22,11 @@ nav a {
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #1f5eff;
 }
 
 .hero {
@@ -50,6 +60,11 @@ p {
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #1048c0;
 }
 
 .section {
@@ -68,4 +83,22 @@ p {
   background: #11162a;
   padding: 30px;
   border-radius: 12px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✓ ";
+  color: #1f5eff;
+  font-weight: bold;
+}
+
+footer {
+  padding: 40px 60px;
+  text-align: center;
+  background: #050814;
+  color: #777;
 }
