@@ -1,104 +1,105 @@
-/* Base styles */
-body {
+* {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  background: #0b0f1a;
-  color: #ffffff;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: #0b1020;
+  color: #f5f7ff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background: #050814;
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: rgba(10, 15, 40, 0.95);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+nav .logo {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 nav a {
-  color: #ffffff;
-  text-decoration: none;
   margin-left: 20px;
-  font-weight: 500;
-  transition: 0.3s;
+  opacity: 0.85;
 }
 
 nav a:hover {
-  color: #1f5eff;
+  opacity: 1;
 }
 
 .hero {
-  padding: 120px 60px;
-  max-width: 1200px;
-  margin: auto;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #0b1020, #101b3a);
 }
 
-h1 {
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
   font-size: 56px;
-  line-height: 1.1;
+  margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 36px;
-  margin-top: 60px;
-}
-
-p {
+.hero p {
   font-size: 18px;
-  line-height: 1.6;
-  max-width: 900px;
+  opacity: 0.9;
 }
 
-.button {
+.btn {
   display: inline-block;
   margin-top: 30px;
-  padding: 16px 30px;
-  background: #1f5eff;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+  padding: 14px 28px;
+  background: #2b5cff;
+  border-radius: 10px;
   font-weight: 600;
-  transition: 0.3s;
-}
-
-.button:hover {
-  background: #1048c0;
 }
 
 .section {
-  padding: 80px 60px;
+  padding: 100px 60px;
   max-width: 1200px;
   margin: auto;
 }
 
-.cards {
+.section h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
 }
 
 .card {
-  background: #11162a;
+  background: rgba(255,255,255,0.04);
   padding: 30px;
-  border-radius: 12px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li::before {
-  content: "✓ ";
-  color: #1f5eff;
-  font-weight: bold;
+  border-radius: 14px;
 }
 
 footer {
-  padding: 40px 60px;
   text-align: center;
-  background: #050814;
-  color: #777;
+  padding: 40px;
+  background: #060a18;
+  opacity: 0.8;
 }
