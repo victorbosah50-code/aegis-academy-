@@ -1,24 +1,40 @@
-function openDemo() {
-  alert(
-    "🎓 FREE DEMO ACCESS\n\n" +
-    "✔ Primary School AI Tutors\n" +
-    "✔ Secondary School Advanced Curriculum\n" +
-    "✔ Military Discipline Programs\n" +
-    "✔ Parent Analytics Dashboard\n\n" +
-    "To enroll fully, visit Pricing."
-  );
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Military Education</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-function contactEnrollment(plan) {
-  alert(
-    "Enrollment Request:\n\n" +
-    "Plan: " + plan + "\n\n" +
-    "Please email:\n" +
-    "Victor Borsa\n" +
-    "📧 enroll@victorborsa.com\n\n" +
-    "Include:\n" +
-    "- Number of children\n" +
-    "- Selected programs\n" +
-    "- Country"
-  );
-}
+<header>
+  <h1>Military Education Division</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Strength • Discipline • Leadership</h2>
+  <p>We teach kids confidence, responsibility and safety in a friendly, age-appropriate way.</p>
+</section>
+
+<section class="section">
+  <div class="cards">
+    <div class="card">
+      <h3>Navy Basics</h3>
+      <p>Water safety, swimming skills and teamwork.</p>
+    </div>
+    <div class="card">
+      <h3>Air Force Concepts</h3>
+      <p>Flight principles, drones and aerospace curiosity.</p>
+    </div>
+    <div class="card">
+      <h3>Self-Defense</h3>
+      <p>Confidence, awareness and personal safety.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
