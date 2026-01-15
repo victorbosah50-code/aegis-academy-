@@ -1,70 +1,99 @@
-/* Pricing page specific styles */
-.pricing-comparison {
-  overflow-x: auto;
-  margin: 4rem 0;
+/* ── Responsive Pricing Cards ──────────────────────────────────────── */
+
+.pricing-cards.mobile-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin: 3rem 0;
 }
 
-.comparison-table {
-  width: 100%;
-  border-collapse: collapse;
+@media (min-width: 992px) {
+  .pricing-cards.mobile-view {
+    display: none;
+  }
+}
+
+.pricing-card {
   background: white;
-  border-radius: 12px;
-  overflow: hidden;
+  border-radius: 16px;
+  padding: 2.5rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
-.comparison-table th, .comparison-table td {
-  padding: 1.5rem 1.8rem;
-  text-align: center;
-  border-bottom: 1px solid #e2e8f0;
+.pricing-card:hover {
+  transform: translateY(-8px);
 }
 
-.comparison-table th {
-  background: var(--dark);
-  color: white;
-  font-size: 1.3rem;
+.pricing-card.featured {
+  border: 3px solid var(--primary);
+  transform: scale(1.04);
 }
 
-.plan-title.featured {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
-}
-
-.most-popular {
-  font-size: 0.8rem;
+.popular-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--gold);
-  color: black;
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-left: 8px;
+  color: #000;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
-.feature-name {
-  text-align: left;
-  font-weight: 500;
+.pricing-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin: 1rem 0 0.5rem;
+}
+
+.price-note {
   color: var(--gray);
+  font-size: 1.1rem;
 }
 
-.check {
-  color: var(--success);
-  font-size: 1.6rem;
-  font-weight: bold;
+.pricing-card ul.features {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
 }
 
+.pricing-card ul.features li {
+  margin: 1rem 0;
+  font-size: 1.15rem;
+}
+
+.btn-select {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Free Trial Box */
 .free-trial-box {
   background: white;
-  padding: 3.5rem;
+  padding: 3.5rem 2.5rem;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.06);
   text-align: center;
-  margin: 5rem auto;
+  margin: 4rem auto;
   max-width: 900px;
 }
 
 .trial-features {
   list-style: none;
   margin: 2rem 0;
-  text-align: left;
+  padding: 0;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -73,18 +102,4 @@
 .trial-features li {
   margin: 1rem 0;
   font-size: 1.15rem;
-}
-
-.trial-buttons {
-  margin: 2.5rem 0;
-}
-
-.trial-buttons .btn-large {
-  margin: 0 1rem;
-}
-
-.small-note {
-  font-size: 0.95rem;
-  color: var(--gray);
-  margin-top: 1.5rem;
 }
