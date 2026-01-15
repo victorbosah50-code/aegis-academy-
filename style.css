@@ -1,172 +1,90 @@
-/* style.css – Harvard-Inspired: Crimson, Serif Headings, Elegant Layouts */
-:root {
-  --primary: #a51c30; /* Harvard Crimson */
-  --primary-dark: #7a1726;
-  --accent: #000000;
-  --dark: #111827;
-  --gray: #6b7280;
-  --light: #f9fafb;
-  --gold: #d4af37; /* For trophies/awards */
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  color: var(--dark);
-  background: var(--light);
-  line-height: 1.6;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 800;
-}
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 5%;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo-text {
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: var(--primary);
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--dark);
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover, .nav-links a.active {
-  color: var(--primary);
-}
-
-.dropdown .dropdown-content {
-  display: none;
-  position: absolute;
-  background: white;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-primary {
-  background: var(--primary);
-  color: white;
-}
-
-.btn-primary:hover {
-  background: var(--primary-dark);
-}
-
-.btn-outline {
-  border: 2px solid var(--primary);
-  color: var(--primary);
-}
-
-.btn-outline:hover {
-  background: var(--primary);
-  color: white;
-}
-
-.hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  color: white;
-  text-align: center;
-  padding: 150px 20px;
-}
-
-.hero h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.subtitle {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+/* Pricing page specific styles */
+.pricing-comparison {
+  overflow-x: auto;
   margin: 4rem 0;
 }
 
-.feature-card {
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
   background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-.feature-card:hover {
-  transform: translateY(-5px);
-}
-
-.cta-section {
-  background: var(--light);
-  padding: 100px 20px;
+.comparison-table th, .comparison-table td {
+  padding: 1.5rem 1.8rem;
   text-align: center;
+  border-bottom: 1px solid #e2e8f0;
 }
 
-.footer {
+.comparison-table th {
   background: var(--dark);
   color: white;
-  padding: 3rem 20px;
+  font-size: 1.3rem;
+}
+
+.plan-title.featured {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+}
+
+.most-popular {
+  font-size: 0.8rem;
+  background: var(--gold);
+  color: black;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+
+.feature-name {
+  text-align: left;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.check {
+  color: var(--success);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.free-trial-box {
+  background: white;
+  padding: 3.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
   text-align: center;
+  margin: 5rem auto;
+  max-width: 900px;
 }
 
-/* Add animations for award-worthy polish */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.trial-features {
+  list-style: none;
+  margin: 2rem 0;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hero-content {
-  animation: fadeIn 1s ease-in;
+.trial-features li {
+  margin: 1rem 0;
+  font-size: 1.15rem;
 }
 
-/* Accessibility */
-a:focus {
-  outline: 2px solid var(--primary);
+.trial-buttons {
+  margin: 2.5rem 0;
 }
 
-/* Trophy-worthy gold accents */
-.gold-accent {
-  color: var(--gold);
+.trial-buttons .btn-large {
+  margin: 0 1rem;
+}
+
+.small-note {
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin-top: 1.5rem;
 }
