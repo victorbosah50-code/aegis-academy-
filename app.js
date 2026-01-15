@@ -1,24 +1,30 @@
-// app.js (Shared JS)
+// app.js – Simple Enhancements for Interactivity
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("EduOS Advanced Prototype Loaded ✓");
+  console.log('EduOS: Harvard-Digital Excellence Loaded');
 
   // Active link highlighting
   const currentPage = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .dropdown-content a').forEach(link => {
-    if (link.getAttribute('href') === currentPage) {
+    if (link.href.endsWith(currentPage)) {
       link.classList.add('active');
-      // If in dropdown, highlight parent
-      const dropdown = link.closest('.dropdown');
-      if (dropdown) {
-        dropdown.querySelector('.dropbtn').classList.add('active');
-      }
     }
   });
 
-  // Future expansion: Mobile menu toggle
-  // You can add a hamburger icon and toggle .nav-links display: flex/block
+  // Subtle scroll animation for sections
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
 
-  // Placeholder for AI interactions or animations
-  // e.g., const aiTutor = document.querySelector('.ai-placeholder');
-  // if (aiTutor) { /* animate or fetch mock data */ }
+  sections.forEach(section => {
+    section.style.opacity = 0;
+    section.style.transform = 'translateY(20px)';
+    section.style.transition = 'opacity 0.6s, transform 0.6s';
+    observer.observe(section);
+  });
 });
