@@ -1,14 +1,18 @@
-<!-- primary.html (Primary School) -->
+<!-- primary.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primary School – EduOS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Primary Excellence – EduOS</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
+
+  <!-- Navigation (identical across project) -->
   <nav class="navbar">
     <div class="logo">
       <span class="logo-text">Edu<span class="highlight">OS</span></span>
@@ -17,68 +21,80 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="academy.html">Academy</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Programs ▼</a>
-        <ul class="dropdown-content">
-          <li><a href="primary.html" class="active">Primary School</a></li>
-          <li><a href="secondary.html">Secondary School</a></li>
-          <li><a href="military.html">Military Academy</a></li>
-          <li><a href="sports.html">Sports & Fitness</a></li>
-          <li><a href="music.html">Music & Creative Arts</a></li>
-        </ul>
+        <a href="#" class="dropbtn">Programs</a>
+        <div class="dropdown-content">
+          <a href="primary.html" class="active">Primary Excellence</a>
+          <a href="secondary.html">Secondary Scholars</a>
+          <a href="military.html">Military Leadership Academy</a>
+          <a href="sports.html">Elite Athletics & Wellness</a>
+          <a href="music.html">Conservatory of Arts</a>
+        </div>
       </li>
-      <li><a href="parents.html">Parent Dashboard</a></li>
-      <li><a href="pricing.html">Pricing & Demo</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="parents.html">Parent Command</a></li>
+      <li><a href="pricing.html">Plans & Access</a></li>
+      <li><a href="about.html">Vision</a></li>
     </ul>
-    <div class="nav-right">
-      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
-      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+    <div class="nav-actions">
+      <a href="pricing.html" class="btn btn-outline">Request Private Demo</a>
+      <a href="#" class="btn btn-primary">Begin Journey</a>
     </div>
   </nav>
 
-  <!-- Hero -->
   <header class="hero hero-sub">
     <div class="hero-content">
-      <h1>Primary School Program</h1>
-      <p class="lead">Building strong foundations with engaging, AI-personalized learning for ages 5-11.</p>
+      <div class="eyebrow">Foundation of Mastery</div>
+      <h1>Primary Excellence</h1>
+      <h2 class="subtitle">Where intellectual curiosity meets structured brilliance — ages 5–11</h2>
     </div>
   </header>
 
-  <!-- Content -->
-  <section class="content-section">
+  <section class="section features">
     <div class="container">
-      <h2>Core Curriculum</h2>
-      <p>Interactive modules in Math, Science, Language, and Social Studies, with gamified progress tracking.</p>
+      <h2 class="section-title">The Architecture of Early Brilliance</h2>
+
       <div class="feature-grid">
         <div class="feature-card">
-          <h3>Adaptive Math</h3>
-          <p>From basics to advanced concepts, adjusted by AI.</p>
+          <div class="feature-icon">Brain</div>
+          <h3>Neuroscience-informed Learning Paths</h3>
+          <p>Developmentally optimised sequences that align with peak windows of cognitive plasticity.</p>
         </div>
         <div class="feature-card">
-          <h3>Exploratory Science</h3>
-          <p>Virtual labs and experiments for young minds.</p>
+          <div class="feature-icon">Spark</div>
+          <h3>Intrinsic Motivation Architecture</h3>
+          <p>Gamified mastery system designed to cultivate lifelong love of learning rather than external rewards.</p>
         </div>
         <div class="feature-card">
-          <h3>Language Mastery</h3>
-          <p>Reading, writing, and multilingual options.</p>
+          <div class="feature-icon">Shield</div>
+          <h3>Character & Values Integration</h3>
+          <p>Embedded ethical reasoning, emotional intelligence, and leadership foundations from day one.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">Graph</div>
+          <h3>Longitudinal Growth Dashboard</h3>
+          <p>Parent-visible trajectory mapping that forecasts future academic strengths years in advance.</p>
         </div>
       </div>
-      <h2>Personalization & Analytics</h2>
-      <p>AI placeholders for tutors, parent reports, and scholarship recommendations.</p>
     </div>
   </section>
 
-  <section class="cta-section">
+  <section class="section cta-final">
     <div class="container">
-      <h2>Enroll in Primary Today</h2>
-      <a href="pricing.html" class="btn btn-primary btn-large">Sign Up</a>
+      <h2>Begin Building a Lifetime of Excellence</h2>
+      <p class="large">The foundation determines everything that follows.</p>
+      <a href="pricing.html" class="btn btn-primary btn-large">Secure Primary Excellence Placement</a>
     </div>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p>© 2026 EduOS – The Digital Education Operating System</p>
-      <p class="small">Scalable, reliable, and ready for global impact.</p>
+      <div class="footer-top">
+        <div class="logo">Edu<span class="highlight">OS</span></div>
+        <p>The Operating System for Next-Century Learning</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 EduOS — All rights reserved</p>
+        <p class="disclaimer">Built for discerning families, forward-thinking institutions, and visionary governments.</p>
+      </div>
     </div>
   </footer>
 
