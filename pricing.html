@@ -11,12 +11,11 @@
 </head>
 <body>
 
-  <!-- Navigation – same across all pages -->
+  <!-- Navigation (same as other pages) -->
   <nav class="navbar">
     <div class="logo">
       <span class="logo-text">Edu<span class="highlight">OS</span></span>
     </div>
-
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="academy.html">Academy</a></li>
@@ -34,10 +33,9 @@
       <li><a href="pricing.html" class="active">Plans & Access</a></li>
       <li><a href="about.html">Vision</a></li>
     </ul>
-
     <div class="nav-actions">
-      <a href="about.html" class="btn btn-outline">Request Private Demo</a>
-      <a href="pricing.html" class="btn btn-primary">Begin Journey</a>
+      <a href="pricing.html" class="btn btn-outline">Request Private Demo</a>
+      <a href="#" class="btn btn-primary">Begin Journey</a>
     </div>
   </nav>
 
@@ -50,88 +48,110 @@
     </div>
   </header>
 
-  <!-- Responsive Pricing Section -->
+  <!-- Main Pricing Section with Comparison Table -->
   <section class="section pricing-section">
     <div class="container">
 
-      <!-- Mobile-first pricing cards (shown on small screens) -->
-      <div class="pricing-cards mobile-view">
-        <!-- Legacy Card -->
-        <div class="pricing-card">
-          <h3>Legacy</h3>
-          <div class="price">$588 <small>/year</small></div>
-          <div class="price-note">($49/month)</div>
-
-          <ul class="features">
-            <li>Primary + Secondary programs</li>
-            <li>Basic AI-personalized paths</li>
-            <li>Core Parent Command analytics</li>
-            <li>1 child per account</li>
-            <li>Standard data compliance</li>
-            <li><strong>30-day free trial</strong></li>
-          </ul>
-
-          <a href="parents.html" class="btn btn-outline">Choose Legacy</a>
-        </div>
-
-        <!-- Signature Card (highlighted) -->
-        <div class="pricing-card featured">
-          <div class="popular-badge">Most Popular</div>
-          <h3>Signature</h3>
-          <div class="price">$948 <small>/year</small></div>
-          <div class="price-note">($79/month)</div>
-
-          <ul class="features">
-            <li><strong>All 5 Elite Programs</strong></li>
-            <li>Advanced AI + priority features</li>
-            <li><strong>Full predictive Parent Command</strong></li>
-            <li>Up to 3 children</li>
-            <li>Dedicated success concierge</li>
-            <li><strong>30-day free trial</strong></li>
-          </ul>
-
-          <a href="parents.html" class="btn btn-primary">Choose Signature</a>
-        </div>
-
-        <!-- Sovereign Institutional Card -->
-        <div class="pricing-card">
-          <h3>Sovereign Institutional</h3>
-          <div class="price">Custom</div>
-
-          <ul class="features">
-            <li>All 5 programs + custom</li>
-            <li>Full custom AI training</li>
-            <li>Enterprise dashboard + API access</li>
-            <li>Unlimited children</li>
-            <li>Priority 24/7 support</li>
-            <li>Custom compliance & white-label</li>
-            <li><strong>30-day free trial</strong></li>
-          </ul>
-
-          <a href="about.html" class="btn btn-primary">Contact Sales</a>
-        </div>
+      <!-- Comparison Table -->
+      <div class="pricing-comparison">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="plan-title">Legacy</th>
+              <th class="plan-title featured">Signature <span class="most-popular">Most Popular</span></th>
+              <th class="plan-title">Sovereign Institutional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">Price (billed annually)</td>
+              <td>$588 <span class="small">($49/month)</span></td>
+              <td>$948 <span class="small">($79/month)</span></td>
+              <td>Custom</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Free 30-Day Trial / Private Demo</td>
+              <td><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Programs Access</td>
+              <td>Primary + Secondary</td>
+              <td><strong>All 5 Elite Programs</strong></td>
+              <td>All 5 + Custom</td>
+            </tr>
+            <tr>
+              <td class="feature-name">AI-Personalized Learning Paths</td>
+              <td>Basic</td>
+              <td><strong>Advanced + Priority AI</strong></td>
+              <td>Full + Custom Training</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Parent Command Center</td>
+              <td>Core Analytics</td>
+              <td><strong>Full Predictive + Controls</strong></td>
+              <td>Enterprise Dashboard + API</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Scholarship & Opportunity Matching</td>
+              <td>Basic Alerts</td>
+              <td><strong>Automated + Priority</strong></td>
+              <td>Institutional Matching</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Children per Account</td>
+              <td>1</td>
+              <td><strong>Up to 3</strong></td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Dedicated Success Concierge</td>
+              <td>—</td>
+              <td><strong>✓</strong></td>
+              <td><strong>Priority 24/7</strong></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Data Residency & Compliance</td>
+              <td>Standard</td>
+              <td>Standard + Options</td>
+              <td><strong>Custom (SOC 2, GDPR, etc.)</strong></td>
+            </tr>
+            <tr>
+              <td class="feature-name">White-label & API Access</td>
+              <td>—</td>
+              <td>—</td>
+              <td><strong>✓</strong></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="#" class="btn btn-outline">Choose Legacy</a></td>
+              <td><a href="#" class="btn btn-primary">Choose Signature</a></td>
+              <td><a href="#" class="btn btn-primary">Contact Sales</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <!-- Free Trial Section -->
+      <!-- Free Trial / Demo Section -->
       <div class="free-trial-box">
         <h2>Start with 30-Day Free Trial or Private Demo</h2>
-        <p class="lead">Experience the full platform risk-free — no credit card required for trial or demo.</p>
-
+        <p class="lead">Experience the full platform risk-free — no credit card required for trial/demo.</p>
         <ul class="trial-features">
-          <li>Full access to Signature-level features during trial</li>
+          <li>Full access to all Signature features during trial</li>
           <li>Personalized onboarding session (30–45 min)</li>
           <li>Live walkthrough of Parent Command Center</li>
           <li>Priority support during trial period</li>
           <li>Cancel anytime — no commitment</li>
         </ul>
-
         <div class="trial-buttons">
-          <a href="pricing.html" class="btn btn-primary btn-large">Start 30-Day Free Trial</a>
-          <a href="about.html" class="btn btn-outline btn-large">Request Private Demo</a>
+          <a href="#" class="btn btn-primary btn-large">Start 30-Day Free Trial</a>
+          <a href="#" class="btn btn-outline btn-large">Request Private Demo</a>
         </div>
-
         <p class="small-note">Most families convert within the first 14 days. Limited spots for personalized demos.</p>
       </div>
+
     </div>
   </section>
 
