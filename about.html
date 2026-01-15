@@ -1,18 +1,80 @@
+<!-- about.html (About) -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About Odyssey</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About EduOS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-text">Edu<span class="highlight">OS</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html">Primary School</a></li>
+          <li><a href="secondary.html">Secondary School</a></li>
+          <li><a href="military.html">Military Academy</a></li>
+          <li><a href="sports.html">Sports & Fitness</a></li>
+          <li><a href="music.html">Music & Creative Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="parents.html">Parent Dashboard</a></li>
+      <li><a href="pricing.html">Pricing & Demo</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+    </div>
+  </nav>
 
-<div id="nav-placeholder"></div>
+  <!-- Hero -->
+  <header class="hero hero-sub">
+    <div class="hero-content">
+      <h1>About EduOS</h1>
+      <p class="lead">The billion-dollar platform redefining education as an operating system.</p>
+    </div>
+  </header>
 
-<section class="hero">
-  <h1>Our Mission</h1>
-  <p>To build the world’s most respected digital education institution.</p>
-</section>
+  <!-- Content -->
+  <section class="content-section">
+    <div class="container">
+      <h2>Our Vision</h2>
+      <p>EduOS connects children, parents, tutors, institutions, and employers in a trusted, AI-powered ecosystem. Think Netflix + Harvard + Private Tutors + AI.</p>
+      <h2>Key Differentiators</h2>
+      <ul>
+        <li>Modular, scalable architecture for global deployment.</li>
+        <li>AI-expandable with placeholders for avatars and intelligence.</li>
+        <li>Institutional-grade: Government-ready licensing and compliance.</li>
+        <li>Monetization via subscriptions, partnerships, and data insights.</li>
+      </ul>
+      <h2>Team & Backing</h2>
+      <p>Founded by education innovators, ready for Monaco investors and demos.</p>
+    </div>
+  </section>
 
-<script src="app.js"></script>
+  <section class="cta-section">
+    <div class="container">
+      <h2>Join the Revolution</h2>
+      <a href="pricing.html" class="btn btn-primary btn-large">Get Involved</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 EduOS – The Digital Education Operating System</p>
+      <p class="small">Scalable, reliable, and ready for global impact.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
