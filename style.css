@@ -1,81 +1,64 @@
-/* =========================
-GLOBAL STYLES
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Segoe UI", system-ui, sans-serif;
-  background: linear-gradient(180deg,#f5f8ff,#e6f0ff);
-  color: #1a1a1a;
-  line-height: 1.6;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f4f7ff;
 }
 
 header {
-  background: #0a1a2e;
+  background: #0b1c33;
   color: white;
-  padding: 20px 40px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-header h1 {
-  font-size: 24px;
-  font-weight: 800;
 }
 
 nav a {
   color: white;
-  margin-left: 20px;
+  margin-left: 15px;
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
 }
 
-nav a:hover {color: #1e90ff;}
+.hero {
+  padding: 80px;
+  text-align: center;
+  background: linear-gradient(135deg,#eef3ff,#ffffff);
+}
 
-/* Page Container */
+.btn {
+  padding: 15px 25px;
+  background: #1e60ff;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #1e60ff;
+  color: #1e60ff;
+}
+
 .page {
-  display: none;
-  padding: 60px 40px;
-  max-width: 1200px;
-  margin: auto;
+  padding: 60px;
 }
-.page.active {display: block;}
 
-/* Hero Section */
-.hero {padding: 100px 40px;text-align:center;background:linear-gradient(135deg,#eaf1ff,#ffffff);border-radius:0 0 50px 50px;}
-.hero h2{font-size:48px;margin-bottom:20px;}
-.hero p{font-size:20px;max-width:900px;margin:auto;margin-bottom:30px;}
-.hero button{padding:16px 28px;font-size:18px;margin:10px;border-radius:12px;border:none;cursor:pointer;background:#1e60ff;color:white;font-weight:600;transition:0.3s;}
-.hero button.outline{background:transparent;color:#1e60ff;border:2px solid #1e60ff;}
-.hero button:hover{opacity:0.85;}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
 
-/* Cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:40px;}
-.card{background:white;padding:30px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.08);text-align:center;transition:0.3s;}
-.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,0,0,0.12);}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
-/* Forms */
-input, select{padding:12px;border-radius:10px;border:1px solid #ddd;margin:8px 0;width:100%;}
-button{cursor:pointer;border:none;border-radius:12px;padding:12px 20px;background:#1e60ff;color:white;font-weight:600;margin-top:10px;transition:0.3s;}
-button:hover{opacity:0.9;}
-
-/* Footer */
-footer{background:#0a1a2e;color:white;padding:40px;text-align:center;margin-top:80px;}
-
-/* Dashboard & Chat */
-.dashboard{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.chat-box{background:#fff;border-radius:12px;padding:20px;height:300px;overflow-y:auto;}
-.chat-input{width:calc(100% - 100px);padding:10px;border-radius:10px;border:1px solid #ccc;}
-.chat-btn{width:80px;padding:10px;border-radius:10px;border:none;background:#1e60ff;color:white;font-weight:600;margin-left:10px;}
-
-/* Info boxes */
-.info-box{background:#f0f4ff;padding:20px;border-radius:12px;margin:10px 0;}
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0b1c33;
+  color: white;
+}
