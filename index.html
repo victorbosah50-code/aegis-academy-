@@ -1,27 +1,105 @@
+<!-- index.html (Landing Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Odyssey Academy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduOS – Digital Education Operating System</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="nav-placeholder"></div>
+  <!-- ┌───────────────────────────────────────────────┐ -->
+  <!-- │                  NAVIGATION                   │ -->
+  <!-- └───────────────────────────────────────────────┘ -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-text">Edu<span class="highlight">OS</span></span>
+    </div>
 
-<section class="hero">
-  <h1>The Future of Digital Education</h1>
-  <p>Elite private tutors, AI-powered learning, military discipline, arts, sports and global academic excellence.</p>
-</section>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html">Primary School</a></li>
+          <li><a href="secondary.html">Secondary School</a></li>
+          <li><a href="military.html">Military Academy</a></li>
+          <li><a href="sports.html">Sports & Fitness</a></li>
+          <li><a href="music.html">Music & Creative Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="parents.html">Parent Dashboard</a></li>
+      <li><a href="pricing.html">Pricing & Demo</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
 
-<section class="section">
-  <div class="card-grid">
-    <div class="card">Primary Education (Ages 4–10)</div>
-    <div class="card">Secondary Education (Ages 11–18)</div>
-    <div class="card">Military & Leadership Academy</div>
-    <div class="card">Sports & Creative Arts</div>
-  </div>
-</section>
+    <div class="nav-right">
+      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+    </div>
+  </nav>
 
-<script src="app.js"></script>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>The Future of Education is Here</h1>
+      <p class="lead">
+        Not just an online school.<br>
+        <strong>A complete Digital Education Operating System</strong>
+      </p>
+      <p class="tagline">
+        Personalized learning × AI tutor × Parent control × Institutional trust × Future-ready skills
+      </p>
+
+      <div class="hero-buttons">
+        <a href="pricing.html" class="btn btn-primary btn-large">Start Free Demo</a>
+        <a href="academy.html" class="btn btn-outline btn-large">Explore Academy</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quick value propositions -->
+  <section class="features">
+    <div class="container">
+      <h2>Why Families & Institutions Choose EduOS</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>AI-Personalized Learning</h3>
+          <p>Adaptive paths that evolve with your child — not one-size-fits-all courses.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Parent Command Center</h3>
+          <p>Real-time analytics, progress reports, AI insights, communication & controls.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Elite Program Portfolio</h3>
+          <p>Academic · Military · Athletic · Artistic — world-class quality in each domain.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Institutional & Government Ready</h3>
+          <p>Enterprise-grade structure, data sovereignty options, audit trails, scalability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Education as Infrastructure, not Content</h2>
+      <p class="large">We are building the operating system for the next 50 years of learning.</p>
+      <a href="pricing.html" class="btn btn-primary btn-large">See Pricing & Request Demo</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 EduOS — The Digital Education Operating System</p>
+      <p class="small">Built for families, schools, governments and the future of work.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
