@@ -1,18 +1,87 @@
+<!-- secondary.html (Secondary School) -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Secondary School</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secondary School – EduOS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-text">Edu<span class="highlight">OS</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html">Primary School</a></li>
+          <li><a href="secondary.html" class="active">Secondary School</a></li>
+          <li><a href="military.html">Military Academy</a></li>
+          <li><a href="sports.html">Sports & Fitness</a></li>
+          <li><a href="music.html">Music & Creative Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="parents.html">Parent Dashboard</a></li>
+      <li><a href="pricing.html">Pricing & Demo</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+    </div>
+  </nav>
 
-<div id="nav-placeholder"></div>
+  <!-- Hero -->
+  <header class="hero hero-sub">
+    <div class="hero-content">
+      <h1>Secondary School Program</h1>
+      <p class="lead">Advanced academics with career-focused specializations for ages 12-18.</p>
+    </div>
+  </header>
 
-<section class="hero">
-  <h1>Secondary Education</h1>
-  <p>STEM, leadership, international exams, scholarships. Ages 11–18.</p>
-</section>
+  <!-- Content -->
+  <section class="content-section">
+    <div class="container">
+      <h2>Advanced Tracks</h2>
+      <p>STEM, Humanities, Business – all with AI-recommended electives and project-based learning.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>STEM Excellence</h3>
+          <p>Coding, physics, biology with virtual simulations.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Humanities Depth</h3>
+          <p>History, literature, critical thinking modules.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Career Prep</h3>
+          <p>Internship simulations and employer connections.</p>
+        </div>
+      </div>
+      <h2>Analytics & Customization</h2>
+      <p>Progress reports, AI tutors, and personalized course recommendations.</p>
+    </div>
+  </section>
 
-<script src="app.js"></script>
+  <section class="cta-section">
+    <div class="container">
+      <h2>Join Secondary Excellence</h2>
+      <a href="pricing.html" class="btn btn-primary btn-large">Enroll</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 EduOS – The Digital Education Operating System</p>
+      <p class="small">Scalable, reliable, and ready for global impact.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
