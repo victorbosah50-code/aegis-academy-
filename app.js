@@ -1,11 +1,24 @@
-function calculateBasic() {
-  const h = document.getElementById("basicHours").value;
-  document.getElementById("basicResult").innerText =
-    h ? "Total: ₦" + (h * 20000).toLocaleString() : "";
+function openDemo() {
+  alert(
+    "🎓 FREE DEMO ACCESS\n\n" +
+    "✔ Primary School AI Tutors\n" +
+    "✔ Secondary School Advanced Curriculum\n" +
+    "✔ Military Discipline Programs\n" +
+    "✔ Parent Analytics Dashboard\n\n" +
+    "To enroll fully, visit Pricing."
+  );
 }
 
-function calculatePro() {
-  const h = document.getElementById("proHours").value;
-  document.getElementById("proResult").innerText =
-    h ? "Total: ₦" + (h * 50000).toLocaleString() : "";
+function contactEnrollment(plan) {
+  alert(
+    "Enrollment Request:\n\n" +
+    "Plan: " + plan + "\n\n" +
+    "Please email:\n" +
+    "Victor Borsa\n" +
+    "📧 enroll@victorborsa.com\n\n" +
+    "Include:\n" +
+    "- Number of children\n" +
+    "- Selected programs\n" +
+    "- Country"
+  );
 }
