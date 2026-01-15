@@ -1,18 +1,87 @@
+<!-- military.html (Military Academy) -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Military Academy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Military Academy – EduOS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-text">Edu<span class="highlight">OS</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html">Primary School</a></li>
+          <li><a href="secondary.html">Secondary School</a></li>
+          <li><a href="military.html" class="active">Military Academy</a></li>
+          <li><a href="sports.html">Sports & Fitness</a></li>
+          <li><a href="music.html">Music & Creative Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="parents.html">Parent Dashboard</a></li>
+      <li><a href="pricing.html">Pricing & Demo</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+    </div>
+  </nav>
 
-<div id="nav-placeholder"></div>
+  <!-- Hero -->
+  <header class="hero hero-sub">
+    <div class="hero-content">
+      <h1>Military Academy Program</h1>
+      <p class="lead">Developing discipline, leadership, and strategic thinking for future defenders.</p>
+    </div>
+  </header>
 
-<section class="hero">
-  <h1>Military & Leadership Academy</h1>
-  <p>Discipline, self-defense, leadership, strategy, ethics.</p>
-</section>
+  <!-- Content -->
+  <section class="content-section">
+    <div class="container">
+      <h2>Leadership Curriculum</h2>
+      <p>Tactics, history, ethics – integrated with physical and mental training.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Strategic Studies</h3>
+          <p>War games, simulations, and AI scenario planning.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Physical Readiness</h3>
+          <p>Fitness trackers and personalized regimens.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Ethical Leadership</h3>
+          <p>Decision-making frameworks and case studies.</p>
+        </div>
+      </div>
+      <h2>Tracking & Recognition</h2>
+      <p>AI analytics, parent dashboards, and scholarship pathways to military institutions.</p>
+    </div>
+  </section>
 
-<script src="app.js"></script>
+  <section class="cta-section">
+    <div class="container">
+      <h2>Build Future Leaders</h2>
+      <a href="pricing.html" class="btn btn-primary btn-large">Apply Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 EduOS – The Digital Education Operating System</p>
+      <p class="small">Scalable, reliable, and ready for global impact.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
