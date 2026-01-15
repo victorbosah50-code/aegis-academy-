@@ -1,26 +1,71 @@
-<section id="pricing" class="page">
-  <h2>Admissions & Pricing</h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admissions & Pricing | Aegis</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Admissions & Pricing</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="academy.html">Academy</a>
+  </nav>
+</header>
+
+<section class="page">
+  <h2>Choose the Right Plan for Your Child</h2>
+
   <div class="cards">
+
     <div class="card">
-      <h3>Free Trial</h3>
-      <p>See our platform and lesson structure before enrollment.</p>
-      <button onclick="showDemo()">View Demo</button>
+      <h3>🎓 Free Demo</h3>
+      <p>Explore our teaching style, curriculum, and platform before enrolling.</p>
+      <button onclick="alert('Demo includes platform tour & lesson previews')">
+        Start Free Demo
+      </button>
     </div>
+
     <div class="card">
-      <h3>Basic</h3>
-      <input id="basicHours" type="number" placeholder="Hours">
+      <h3>Basic Plan</h3>
+      <p>
+        • Online group lessons  
+        • Qualified international teachers  
+        • ₦20,000 per subject / hour
+      </p>
+      <input type="number" id="basicHours" placeholder="Hours">
       <button onclick="calculateBasic()">Calculate</button>
       <p id="basicResult"></p>
     </div>
+
     <div class="card">
-      <h3>Professional</h3>
-      <input id="proHours" type="number" placeholder="Hours">
+      <h3>Professional Plan</h3>
+      <p>
+        • Private 1-on-1 lessons  
+        • Senior educators & specialists  
+        • ₦50,000 per subject / hour
+      </p>
+      <input type="number" id="proHours" placeholder="Hours">
       <button onclick="calculatePro()">Calculate</button>
       <p id="proResult"></p>
     </div>
+
     <div class="card">
-      <h3>Premium</h3>
-      <p>Contact Victor Borsa with your email & number of children for personalized pricing.</p>
+      <h3>Premium / Elite</h3>
+      <p>
+        Full-time digital schooling, parent dashboard, leadership tracks,
+        military & global certification.
+      </p>
+      <p>
+        📩 Contact <strong>Victor Borsa</strong><br>
+        Email your child count & needs to receive a tailored plan.
+      </p>
     </div>
+
   </div>
 </section>
+
+</body>
+</html>
