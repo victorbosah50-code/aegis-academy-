@@ -1,18 +1,87 @@
+<!-- sports.html (Sports & Fitness) -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sports Academy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports & Fitness – EduOS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-text">Edu<span class="highlight">OS</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html">Primary School</a></li>
+          <li><a href="secondary.html">Secondary School</a></li>
+          <li><a href="military.html">Military Academy</a></li>
+          <li><a href="sports.html" class="active">Sports & Fitness</a></li>
+          <li><a href="music.html">Music & Creative Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="parents.html">Parent Dashboard</a></li>
+      <li><a href="pricing.html">Pricing & Demo</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+    </div>
+  </nav>
 
-<div id="nav-placeholder"></div>
+  <!-- Hero -->
+  <header class="hero hero-sub">
+    <div class="hero-content">
+      <h1>Sports & Fitness Program</h1>
+      <p class="lead">Elite athletic training with health monitoring and competitive pathways.</p>
+    </div>
+  </header>
 
-<section class="hero">
-  <h1>Sports & Fitness</h1>
-  <p>Professional coaching, physical discipline, performance tracking.</p>
-</section>
+  <!-- Content -->
+  <section class="content-section">
+    <div class="container">
+      <h2>Training Modules</h2>
+      <p>From team sports to individual fitness, with AI-optimized plans.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Team Sports</h3>
+          <p>Soccer, basketball – strategy and skill building.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Individual Fitness</h3>
+          <p>Yoga, running, strength training with metrics.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Nutrition & Recovery</h3>
+          <p>Personalized plans and progress tracking.</p>
+        </div>
+      </div>
+      <h2>Analytics & Opportunities</h2>
+      <p>Parent reports, AI coaches, and scholarship alerts for sports programs.</p>
+    </div>
+  </section>
 
-<script src="app.js"></script>
+  <section class="cta-section">
+    <div class="container">
+      <h2>Achieve Athletic Excellence</h2>
+      <a href="pricing.html" class="btn btn-primary btn-large">Join Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 EduOS – The Digital Education Operating System</p>
+      <p class="small">Scalable, reliable, and ready for global impact.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
