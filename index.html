@@ -1,126 +1,92 @@
-<!-- index.html – Main Landing Page -->
+<!-- index.html (Landing Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EduOS — The Operating System for Next-Century Education</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduOS – Digital Education Operating System</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- ── Premium Navigation ─────────────────────────────────────── -->
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">
       <span class="logo-text">Edu<span class="highlight">OS</span></span>
     </div>
-
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="academy.html">Academy</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Programs</a>
-        <div class="dropdown-content">
-          <a href="primary.html">Primary Excellence</a>
-          <a href="secondary.html">Secondary Scholars</a>
-          <a href="military.html">Military Leadership Academy</a>
-          <a href="sports.html">Elite Athletics & Wellness</a>
-          <a href="music.html">Conservatory of Arts</a>
-        </div>
+        <a href="#" class="dropbtn">Programs ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html">Primary School</a></li>
+          <li><a href="secondary.html">Secondary School</a></li>
+          <li><a href="military.html">Military Academy</a></li>
+          <li><a href="sports.html">Sports & Fitness</a></li>
+          <li><a href="music.html">Music & Creative Arts</a></li>
+        </ul>
       </li>
-      <li><a href="parents.html">Parent Command</a></li>
-      <li><a href="pricing.html">Plans & Access</a></li>
-      <li><a href="about.html">Vision</a></li>
+      <li><a href="parents.html">Parent Dashboard</a></li>
+      <li><a href="pricing.html">Pricing & Demo</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
-
-    <div class="nav-actions">
-      <a href="pricing.html" class="btn btn-outline">Request Private Demo</a>
-      <a href="pricing.html" class="btn btn-primary">Begin Journey</a>
+    <div class="nav-right">
+      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
     </div>
   </nav>
 
-  <!-- Hero – Institutional Prestige -->
-  <header class="hero hero-main">
+  <!-- Hero -->
+  <header class="hero">
     <div class="hero-content">
-      <div class="eyebrow">The Future of Learning Architecture</div>
-      <h1>EduOS</h1>
-      <h2 class="subtitle">Not an online school.<br>The <strong>operating system</strong> for 21st–22nd century education.</h2>
-
-      <p class="hero-tagline">
-        Personalized mastery × Institutional rigor × Family sovereignty × AI intelligence × Global opportunity pathways
-      </p>
-
-      <div class="hero-cta">
-        <a href="pricing.html" class="btn btn-primary btn-hero">Request Institutional / Family Demo</a>
-        <a href="academy.html" class="btn btn-outline btn-hero">Explore the Ecosystem</a>
+      <h1>The Future of Education is Here</h1>
+      <p class="lead">Not just an online school. <strong>A complete Digital Education Operating System</strong>.</p>
+      <p class="tagline">Personalized learning × AI tutors × Parent controls × Institutional trust × Future-ready skills.</p>
+      <div class="hero-buttons">
+        <a href="pricing.html" class="btn btn-primary btn-large">Start Free Demo</a>
+        <a href="academy.html" class="btn btn-outline btn-large">Explore Academy</a>
       </div>
     </div>
   </header>
 
-  <!-- Trust & Scale Section -->
-  <section class="section trust-bar">
+  <!-- Features -->
+  <section class="features">
     <div class="container">
-      <div class="trust-items">
-        <div>Harvard-level academic rigor</div>
-        <div>Enterprise-grade architecture</div>
-        <div>Monaco-family & institutional privacy</div>
-        <div>Scalable to national education systems</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Value Propositions -->
-  <section class="section features">
-    <div class="container">
-      <h2 class="section-title">The New Standard in Elite Education</h2>
-
+      <h2>Why Families, Institutions, and Governments Choose EduOS</h2>
       <div class="feature-grid">
         <div class="feature-card">
-          <div class="feature-icon">AI</div>
-          <h3>Hyper-personalized mastery</h3>
-          <p>Adaptive learning trajectories that evolve daily — not static courses.</p>
+          <h3>AI-Powered Personalization</h3>
+          <p>Adaptive learning paths that evolve in real-time based on performance, interests, and goals. Placeholder for AI tutor integration.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">Parent</div>
-          <h3>Family command & visibility</h3>
-          <p>Real-time intelligence dashboard, predictive analytics, direct tutor access.</p>
+          <h3>Parent Command Center</h3>
+          <p>Advanced analytics, progress reports, AI-driven insights, communication tools, and granular controls.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">Shield</div>
-          <h3>Institutional & sovereign-grade security</h3>
-          <p>Data residency options, audit trails, compliance for governments & high-net-worth families.</p>
+          <h3>Elite Program Ecosystem</h3>
+          <p>Integrated academic, military, athletic, and artistic programs with world-class curricula and certifications.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">Network</div>
-          <h3>Global opportunity architecture</h3>
-          <p>Scholarship matching, university & employer pathways, credential portfolio.</p>
+          <h3>Enterprise-Grade Scalability</h3>
+          <p>Modular architecture ready for billions of users, with data sovereignty, audit trails, and API expandability.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section cta-final">
+  <!-- CTA -->
+  <section class="cta-section">
     <div class="container">
-      <h2>Education Reimagined as Strategic Infrastructure</h2>
-      <p class="large">For families who demand excellence.<br>For institutions building the future.</p>
-      <a href="pricing.html" class="btn btn-primary btn-large">Schedule Private Demonstration</a>
+      <h2>Education as Infrastructure</h2>
+      <p class="large">Building the OS for the next era of learning: Connecting children, parents, tutors, institutions, and employers.</p>
+      <a href="pricing.html" class="btn btn-primary btn-large">Request Demo & See Pricing</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <div class="footer-top">
-        <div class="logo">Edu<span class="highlight">OS</span></div>
-        <p>The Operating System for Next-Century Learning</p>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 EduOS — All rights reserved</p>
-        <p class="disclaimer">Built for discerning families, forward-thinking institutions, and visionary governments.</p>
-      </div>
+      <p>© 2026 EduOS – The Digital Education Operating System</p>
+      <p class="small">Scalable, reliable, and ready for global impact.</p>
     </div>
   </footer>
 
