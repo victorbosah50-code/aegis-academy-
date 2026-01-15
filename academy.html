@@ -1,18 +1,104 @@
+<!-- academy.html (Academy Overview) -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Academy Overview</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academy Overview – EduOS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-text">Edu<span class="highlight">OS</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html" class="active">Academy</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Programs ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html">Primary School</a></li>
+          <li><a href="secondary.html">Secondary School</a></li>
+          <li><a href="military.html">Military Academy</a></li>
+          <li><a href="sports.html">Sports & Fitness</a></li>
+          <li><a href="music.html">Music & Creative Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="parents.html">Parent Dashboard</a></li>
+      <li><a href="pricing.html">Pricing & Demo</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="pricing.html" class="btn btn-outline">Free Demo</a>
+      <a href="pricing.html" class="btn btn-primary">Enroll Now</a>
+    </div>
+  </nav>
 
-<div id="nav-placeholder"></div>
+  <!-- Hero -->
+  <header class="hero hero-sub">
+    <div class="hero-content">
+      <h1>EduOS Academy: A World-Class Ecosystem</h1>
+      <p class="lead">Integrated programs for holistic development, powered by AI and designed for excellence.</p>
+    </div>
+  </header>
 
-<section class="hero">
-  <h1>Odyssey Academy</h1>
-  <p>A Harvard-level digital academy for private tutoring, after-school mastery, and elite future leaders.</p>
-</section>
+  <!-- Content -->
+  <section class="content-section">
+    <div class="container">
+      <h2>Our Comprehensive Academy Structure</h2>
+      <p>EduOS is more than courses – it's an operating system connecting learners to opportunities.</p>
+      <div class="program-grid">
+        <div class="program-card">
+          <h3>Primary School</h3>
+          <p>Foundation-building with fun, AI-adaptive basics in core subjects.</p>
+          <a href="primary.html" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="program-card">
+          <h3>Secondary School</h3>
+          <p>Advanced academics with career prep and specialization tracks.</p>
+          <a href="secondary.html" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="program-card">
+          <h3>Military Academy</h3>
+          <p>Discipline, leadership, and strategic skills for future leaders.</p>
+          <a href="military.html" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="program-card">
+          <h3>Sports & Fitness</h3>
+          <p>Elite training, health metrics, and competitive pathways.</p>
+          <a href="sports.html" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="program-card">
+          <h3>Music & Creative Arts</h3>
+          <p>Creative expression, skill mastery, and portfolio building.</p>
+          <a href="music.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+      <h2>Future-Proof Features</h2>
+      <ul>
+        <li>AI Tutor Placeholders: Intelligent guidance ready for integration.</li>
+        <li>Personalized Paths: Dynamic recommendations based on progress.</li>
+        <li>Scholarship Tracker: Automated alerts for opportunities.</li>
+      </ul>
+    </div>
+  </section>
 
-<script src="app.js"></script>
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Transform Learning?</h2>
+      <a href="pricing.html" class="btn btn-primary btn-large">Get Started</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 EduOS – The Digital Education Operating System</p>
+      <p class="small">Scalable, reliable, and ready for global impact.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
