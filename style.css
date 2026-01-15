@@ -1,4 +1,4 @@
-<!-- style.css -->
+/* style.css (Shared CSS) */
 :root {
   --primary: #0066ff;
   --primary-dark: #004dd9;
@@ -6,6 +6,7 @@
   --gray: #64748b;
   --light: #f8fafc;
   --success: #10b981;
+  --accent: #ec4899;
 }
 
 * {
@@ -70,6 +71,10 @@ body {
   position: relative;
 }
 
+.dropbtn {
+  cursor: pointer;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -81,6 +86,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  list-style: none;
 }
 
 .dropdown:hover .dropdown-content {
@@ -94,6 +100,12 @@ body {
 .dropdown-content a {
   display: block;
   white-space: nowrap;
+  color: var(--dark);
+}
+
+.dropdown-content a:hover,
+.dropdown-content a.active {
+  color: var(--primary);
 }
 
 .nav-right {
@@ -107,6 +119,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -141,6 +154,11 @@ body {
   padding: 140px 5% 100px;
 }
 
+.hero-sub {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  padding: 100px 5% 80px;
+}
+
 .hero h1 {
   font-size: 3.8rem;
   margin-bottom: 1.2rem;
@@ -160,30 +178,65 @@ body {
   font-weight: 300;
 }
 
-.features {
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.features,
+.content-section {
   padding: 100px 0;
   background: white;
 }
 
-.feature-grid {
+.feature-grid,
+.program-grid,
+.pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
 
-.feature-card {
+.feature-card,
+.program-card,
+.pricing-card {
   background: var(--light);
   padding: 2.2rem;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
   transition: all 0.25s;
+  text-align: center;
 }
 
-.feature-card:hover {
+.feature-card:hover,
+.program-card:hover,
+.pricing-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   border-color: var(--primary);
+}
+
+.pricing-card.featured {
+  border-color: var(--success);
+  transform: scale(1.05);
+}
+
+.pricing-card .price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 1rem 0;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.pricing-card li {
+  margin: 0.5rem 0;
 }
 
 .cta-section {
@@ -196,6 +249,12 @@ body {
 .cta-section h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
+}
+
+.cta-section .large {
+  font-size: 1.8rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -211,10 +270,23 @@ footer .small {
   font-size: 0.9rem;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 992px) {
   .nav-links {
-    display: none;
+    display: none; /* Add hamburger menu in JS for mobile */
   }
-  /* You can add hamburger menu later */
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero .lead {
+    font-size: 1.4rem;
+  }
+
+  .feature-grid,
+  .program-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
 }
