@@ -1,42 +1,28 @@
-<!-- parents.html – Key Investor Page -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Parent Dashboard – EduOS</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Navigation -->
-
-  <header class="hero hero-sub">
-    <div class="hero-content">
-      <div class="eyebrow">Family Legacy Tools</div>
-      <h1>Parent Dashboard</h1>
-      <h2 class="subtitle">Top-Rank Oversight for Scholarly Success</h2>
+<!-- nav.html - Shared Navigation Snippet -->
+<header>
+  <nav>
+    <div class="logo">EduOS</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li class="dropdown">
+        <a href="#">Programs</a>
+        <ul class="dropdown-content">
+          <li><a href="primary.html">Primary Excellence</a></li>
+          <li><a href="secondary.html">Secondary Scholars</a></li>
+          <li><a href="military.html">Military Leadership</a></li>
+          <li><a href="sports.html">Elite Athletics</a></li>
+          <li><a href="music.html">Conservatory of Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="parents.html">Parent Command</a></li>
+      <li><a href="pricing.html">Plans & Access</a></li>
+      <li><a href="about.html">Vision</a></li>
+    </ul>
+    <div>
+      <button id="darkModeToggle">Dark Mode</button>
+      <button id="loginBtn">Sign In</button>
+      <button id="aiChatBtn">AI Copilot</button>
     </div>
-  </header>
-
-  <section class="content-section">
-    <div class="container">
-      <h2>Prestigious Features</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h3>Real-Time Analytics</h3>
-          <p>Harvard-style progress tracking for award-winning outcomes.</p>
-        </div>
-        <!-- Add more -->
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-
-  <!-- Footer -->
-
-  <script src="app.js"></script>
-</body>
-</html>
+  </nav>
+</header>
