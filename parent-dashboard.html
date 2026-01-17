@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Dashboard – EduOS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <!-- Header/nav same -->
+
+  <main>
+    <h1>Parent Dashboard</h1>
+    <p>Monitor your child's progress (link child account in Firebase console for now)</p>
+    <div id="progress">Loading child progress...</div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    auth.onAuthStateChanged(user => {
+      if (!user) return window.location.href = 'index.html';
+      document.getElementById('progress').innerHTML = '<p>Child progress tracking coming soon – currently manual in Firebase.</p>';
+    });
+  </script>
+</body>
+</html>
