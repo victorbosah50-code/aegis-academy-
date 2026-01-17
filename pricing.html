@@ -1,46 +1,52 @@
-<!-- pricing.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pricing – EduOS</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing – EduOS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+body {
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li>Programs:
+                    <ul>
+                        <li><a href="primary.html">Primary Excellence</a></li>
+                        <li><a href="secondary.html">Secondary Scholars</a></li>
+                        <li><a href="military.html">Military Leadership</a></li>
+                        <li><a href="sports.html">Elite Athletics & Wellness</a></li>
+                        <li><a href="music.html">Conservatory of Arts</a></li>
+                    </ul>
+                </li>
+                <li><a href="parents.html">Parent Command</a></li>
+                <li><a href="pricing.html">Plans & Access</a></li>
+                <li><a href="about.html">Vision</a></li>
+                <li><button id="darkModeToggle">Dark Mode</button></li>
+                <li><button id="loginBtn">Login / Sign Up</button></li>
+                <li><button id="aiChatBtn">AI Copilot Chat</button></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Navigation -->
+    <main>
+        <h1>Pricing Plans</h1>
+        <p>Basic (₦5,000 / $10 one-time): Basic access, 1 program, AI, certificates – ideal for testing.</p>
+        <p>Premium (₦20,000 / $50/month): Full access, all programs, parent dashboard, live tutorials – for serious learning.</p>
+        <p>Enterprise: Contact for private tutors and custom plans – email info@eduos.com.</p>
+        <button onclick="pay('basic', 'stripe')">Basic Stripe</button>
+        <button onclick="pay('basic', 'paystack')">Basic Paystack</button>
+        <button onclick="pay('premium', 'stripe')">Premium Stripe</button>
+        <button onclick="pay('premium', 'paystack')">Premium Paystack</button>
+    </main>
 
-  <header class="hero hero-sub">
-    <div class="hero-content">
-      <div class="eyebrow">Elite Access</div>
-      <h1>Pricing & Plans</h1>
-      <h2 class="subtitle">Invest in Top-Rank Education</h2>
-    </div>
-  </header>
+    <footer>
+        <p>EduOS: Built in Abuja for the World</p>
+    </footer>
 
-  <section class="content-section">
-    <div class="container">
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>Legacy Plan</h3>
-          <p class="price">$99/year</p>
-          <ul>
-            <li>Core Access</li>
-            <!-- Add features -->
-          </ul>
-          <a href="#" class="btn btn-primary">Choose Legacy</a>
-        </div>
-        <!-- Add Premium and Institutional -->
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-
-  <!-- Footer -->
-
-  <script src="app.js"></script>
+    <script src="script.js"></script>
+}
 </body>
 </html>
