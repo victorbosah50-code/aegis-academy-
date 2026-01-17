@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses – EduOS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <!-- Header/nav same as index -->
+
+  <main>
+    <h1>Available Courses</h1>
+    <div id="courseList"></div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        db.collection('courses').get().then(snapshot => {
+          const list = document.getElementById('courseList');
+          snapshot.forEach(doc => {
+            const data = doc.data();
+            const div = document.createElement('div');
+            div.innerHTML = `<h3>${data.title}</h3><button onclick="viewCourse('${doc.id}')">View Course</button>`;
+            list.appendChild(div);
+          });
+        });
+      } else {
+        document.getElementById('courseList').innerHTML = '<p>Please sign in to view courses.</p>';
+      }
+    });
+
+    function viewCourse(id) {
+      window.location.href = `course-view.html?id=${id}`;
+    }
+  </script>
+</body>
+</html>
