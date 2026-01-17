@@ -39,34 +39,19 @@
   <main>
     <section class="hero">
       <h1>World Religions & Interfaith</h1>
-      <p>Learn about major faiths with respect and understanding.</p>
-    </section>
-
-    <section class="content">
-      <div class="track">
-        <h2>Christianity</h2>
-        <p>Teachings of Jesus, love, forgiveness (~2.5B followers).</p>
-      </div>
-      <div class="track">
-        <h2>Islam</h2>
-        <p>Five Pillars, Quran, submission to Allah (~2B followers).</p>
-      </div>
-      <div class="track">
-        <h2>Hinduism</h2>
-        <p>Dharma, karma, Vedas (~1.2B followers).</p>
-      </div>
-      <div class="track">
-        <h2>Buddhism</h2>
-        <p>Four Noble Truths, enlightenment (~520M followers).</p>
-      </div>
-      <div class="track">
-        <h2>Judaism</h2>
-        <p>Torah, ethical monotheism (~15M followers).</p>
-      </div>
-      <div class="track">
-        <h2>Sikhism</h2>
-        <p>One God, equality, service (~30M followers).</p>
-      </div>
+      <p>Select a religion to learn about:</p>
+      <select id="religionSelect">
+        <option>Christianity</option>
+        <option>Islam</option>
+        <option>Hinduism</option>
+        <option>Buddhism</option>
+        <option>Judaism</option>
+        <option>Sikhism</option>
+        <option>Bahá'í</option>
+        <option>Indigenous Traditions</option>
+      </select>
+      <button onclick="showReligionInfo()">View Info</button>
+      <div id="religionInfo"></div>
       <button onclick="window.location.href='pricing.html'">Enroll</button>
     </section>
   </main>
@@ -76,5 +61,11 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function showReligionInfo() {
+      const selected = document.getElementById('religionSelect').value;
+      document.getElementById('religionInfo').innerHTML = `<p>Learning about ${selected} – details coming soon. Ask AI Copilot for more!</p>`;
+    }
+  </script>
 </body>
 </html>
