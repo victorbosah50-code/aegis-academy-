@@ -1,2 +1,2 @@
-// app.js – Additional JavaScript for app-like features
-console.log('EduOS App Ready');
+// app.js - Extra app logic (optional)
+console.log("EduOS App Loaded");
