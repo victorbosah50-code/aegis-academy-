@@ -1,35 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Aegis Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduOS – Premium Digital Education</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="logo">EduOS</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academy.html">Academy</a></li>
+        <li class="dropdown">
+          <a href="#">Programs ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="primary.html">Primary Excellence</a></li>
+            <li><a href="secondary.html">Secondary Scholars</a></li>
+            <li><a href="military.html">Military Leadership</a></li>
+            <li><a href="sports.html">Elite Athletics & Wellness</a></li>
+            <li><a href="music.html">Conservatory of Arts</a></li>
+            <li><a href="religions.html">World Religions</a></li>
+          </ul>
+        </li>
+        <li><a href="parents.html">Parent Command</a></li>
+        <li><a href="pricing.html">Plans & Access</a></li>
+        <li><a href="about.html">Vision</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <button id="darkModeToggle">Dark Mode</button>
+        <button id="loginBtn">Sign In</button>
+        <button id="aiChatBtn">AI Copilot</button>
+      </div>
+    </nav>
+  </header>
 
-<!-- Header -->
-<script src="app.js"></script>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>EduOS</h1>
+        <h2>Fun & Personalized Learning for Every Child & Teen</h2>
+        <p>From Abuja to the world — games, stories, and lessons made just for you!</p>
+        <!-- Kid-friendly intro video (replace with your Vidnoz/YouTube embed) -->
+        <iframe width="640" height="360" src="YOUR_INTRO_VIDEO_EMBED_URL" title="Fun Learning with EduOS" frameborder="0" allowfullscreen></iframe>
+        <button id="enrollBtn">Start Learning Now</button>
+      </div>
+    </section>
 
-<section class="card">
-  <h2>Welcome to Aegis Academy</h2>
-  <p>Your global platform for academic, leadership, arts, sports, faith, and military-style training with AI and real progress tracking.</p>
-</section>
+    <section class="features">
+      <h2>Why Kids Love EduOS</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Just for You</h3>
+          <p>AI makes lessons easy or hard — perfect for your level!</p>
+        </div>
+        <div class="feature-card">
+          <h3>Fun Games & Stories</h3>
+          <p>Learn letters, numbers, and being kind while playing.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Parents See Everything</h3>
+          <p>Mom & Dad can watch your progress and cheer you on.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<section class="card">
-  <h3>Featured Courses</h3>
-  <div id="featured-courses"></div>
-</section>
+  <!-- Auth Modal -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h2>Sign In / Sign Up</h2>
+      <input id="email" type="email" placeholder="Email" required>
+      <input id="password" type="password" placeholder="Password" required>
+      <label><input type="checkbox" id="ageConsent"> I am 13+ or have parent permission</label>
+      <button onclick="signUp()">Create Account</button>
+      <button onclick="login()">Sign In</button>
+      <button onclick="googleSignIn()">Google</button>
+    </div>
+  </div>
 
-<section class="card">
-  <h3>Intro Video</h3>
-  <iframe width="100%" height="315"
-    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-    allowfullscreen></iframe>
-</section>
+  <!-- AI Copilot Modal -->
+  <div id="aiModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h2>AI Copilot – Your Learning Friend</h2>
+      <textarea id="aiQuery" placeholder="Ask anything! Homework, leadership, religions, or just for fun..." rows="4"></textarea>
+      <button onclick="askAI()">Ask AI</button>
+      <div id="aiResponse" class="response-box"></div>
+    </div>
+  </div>
 
-<footer>
-  © 2026 Aegis Academy. All rights reserved.
-</footer>
+  <footer>
+    <p>© 2026 EduOS – Built in Abuja for the World</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
