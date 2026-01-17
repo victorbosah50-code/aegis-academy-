@@ -5,43 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Military Leadership Academy – EduOS</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 </head>
 <body>
-  <!-- Paste same header/nav from index.html here -->
+  <header>
+    <nav>
+      <div class="logo">EduOS</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li class="dropdown">
+          <a href="#">Programs</a>
+          <ul class="dropdown-content">
+            <li><a href="primary.html">Primary Excellence</a></li>
+            <li><a href="secondary.html">Secondary Scholars</a></li>
+            <li><a href="military.html">Military Leadership</a></li>
+            <li><a href="sports.html">Elite Athletics & Wellness</a></li>
+            <li><a href="music.html">Conservatory of Arts</a></li>
+          </ul>
+        </li>
+        <li><a href="parents.html">Parent Command</a></li>
+        <li><a href="pricing.html">Plans & Access</a></li>
+        <li><a href="about.html">Vision</a></li>
+      </ul>
+      <div>
+        <button id="darkModeToggle">Dark Mode</button>
+        <button id="loginBtn">Sign In</button>
+        <button id="aiChatBtn">AI Copilot</button>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <section class="hero">
       <h1>Military Leadership Academy</h1>
-      <p>Develop strategic thinking, discipline, and leadership – Navy, Airforce, Intelligence tracks</p>
+      <p>Develop discipline, strategy, and leadership skills for the future.</p>
     </section>
 
     <section class="content">
       <div class="track">
-        <h3>Navy Track</h3>
-        <p>Seamanship, maritime strategy, naval history</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4fb7q-izEIw" frameborder="0" allowfullscreen></iframe>
+        <h2>Navy Track</h2>
+        <p>Seamanship, naval strategy, maritime leadership, fleet operations</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4fb7q-izEIw" title="Navy Leadership" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="track">
-        <h3>Airforce Track</h3>
-        <p>Aviation, air power, flight simulation</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IWxsEb4nRAU" frameborder="0" allowfullscreen></iframe>
+        <h2>Airforce Track</h2>
+        <p>Aviation fundamentals, air power strategy, flight simulation, aerospace technology</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IWxsEb4nRAU" title="Airforce Leadership" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="track">
-        <h3>Intelligence Track</h3>
-        <p>Analysis, cybersecurity, strategic foresight</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qwA6MmbeGNo" frameborder="0" allowfullscreen></iframe>
+        <h2>Intelligence Track</h2>
+        <p>Strategic intelligence, analysis, cybersecurity, threat assessment</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qwA6MmbeGNo" title="Intelligence Leadership" frameborder="0" allowfullscreen></iframe>
       </div>
 
-      <button onclick="window.location.href='index.html#pricing'">Enroll in Military Track</button>
+      <button class="enroll-btn" onclick="window.location.href='pricing.html'">Enroll in Military Leadership</button>
     </section>
   </main>
 
-  <footer>© 2026 EduOS</footer>
+  <footer>
+    <p>© 2026 EduOS – Built in Abuja for the World</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
