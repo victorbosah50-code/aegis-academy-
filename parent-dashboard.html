@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parent Dashboard – EduOS</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard – EduOS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 </head>
-<body>
-  <!-- Header/nav same -->
+body {
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li>Programs:
+                    <ul>
+                        <li><a href="primary.html">Primary Excellence</a></li>
+                        <li><a href="secondary.html">Secondary Scholars</a></li>
+                        <li><a href="military.html">Military Leadership</a></li>
+                        <li><a href="sports.html">Elite Athletics & Wellness</a></li>
+                        <li><a href="music.html">Conservatory of Arts</a></li>
+                    </ul>
+                </li>
+                <li><a href="parents.html">Parent Command</a></li>
+                <li><a href="pricing.html">Plans & Access</a></li>
+                <li><a href="about.html">Vision</a></li>
+                <li><button id="darkModeToggle">Dark Mode</button></li>
+                <li><button id="loginBtn">Login / Sign Up</button></li>
+                <li><button id="aiChatBtn">AI Copilot Chat</button></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h1>Parent Dashboard</h1>
-    <p>Monitor your child's progress (link child account in Firebase console for now)</p>
-    <div id="progress">Loading child progress...</div>
-  </main>
+    <main>
+        <h1>Parent Dashboard</h1>
+        <p>View child progress, reports, certificates.</p>
+        <div id="childProgress"></div>
+    </main>
 
-  <script src="script.js"></script>
-  <script>
-    auth.onAuthStateChanged(user => {
-      if (!user) return window.location.href = 'index.html';
-      document.getElementById('progress').innerHTML = '<p>Child progress tracking coming soon – currently manual in Firebase.</p>';
-    });
-  </script>
+    <footer>
+        <p>EduOS: Built in Abuja for the World</p>
+    </footer>
+
+    <script src="script.js"></script>
+}
 </body>
 </html>
