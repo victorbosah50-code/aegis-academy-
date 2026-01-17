@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Religions & Interfaith – EduOS</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religions – EduOS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- Paste same header/nav from index.html here -->
+body {
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li>Programs:
+                    <ul>
+                        <li><a href="primary.html">Primary Excellence</a></li>
+                        <li><a href="secondary.html">Secondary Scholars</a></li>
+                        <li><a href="military.html">Military Leadership</a></li>
+                        <li><a href="sports.html">Elite Athletics & Wellness</a></li>
+                        <li><a href="music.html">Conservatory of Arts</a></li>
+                    </ul>
+                </li>
+                <li><a href="parents.html">Parent Command</a></li>
+                <li><a href="pricing.html">Plans & Access</a></li>
+                <li><a href="about.html">Vision</a></li>
+                <li><button id="darkModeToggle">Dark Mode</button></li>
+                <li><button id="loginBtn">Login / Sign Up</button></li>
+                <li><button id="aiChatBtn">AI Copilot Chat</button></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <h1>World Religions & Interfaith Leadership</h1>
-      <p>Learn major faiths respectfully: Christianity, Islam, Hinduism, Buddhism, Judaism, Sikhism, Bahá'í, Indigenous traditions</p>
-    </section>
+    <main>
+        <h1>World Religions & Interfaith</h1>
+        <p>Select a religion to learn about:</p>
+        <select id="religionSelect">
+            <option>Christianity</option>
+            <option>Islam</option>
+            <option>Hinduism</option>
+            <option>Buddhism</option>
+            <option>Judaism</option>
+            <option>Sikhism</option>
+            <option>Bahá'í</option>
+            <option>Indigenous Traditions</option>
+        </select>
+        <button onclick="showReligionInfo()">View Info</button>
+        <div id="religionInfo"></div>
+        <button onclick="window.location.href='pricing.html'">Enroll</button>
+    </main>
 
-    <section class="content">
-      <div class="track">
-        <h3>Christianity</h3>
-        <p>~2.5 billion followers – Bible, Jesus, love & forgiveness</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TpcbfxtdoI8" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="track">
-        <h3>Islam</h3>
-        <p>~2 billion – Quran, Five Pillars, Prophet Muhammad</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7y0c5x4N3jQ" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="track">
-        <h3>Hinduism</h3>
-        <p>~1.2 billion – Dharma, karma, Vedas</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8nn5uG5w3O4" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <!-- Add Buddhism, Judaism, Sikhism, Bahá'í, Indigenous similarly with free YouTube embeds -->
+    <footer>
+        <p>EduOS: Built in Abuja for the World</p>
+    </footer>
 
-      <button onclick="window.location.href='index.html#pricing'">Enroll in Religions Track</button>
-    </section>
-  </main>
-
-  <footer>© 2026 EduOS</footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function showReligionInfo() {
+            const selected = document.getElementById('religionSelect').value;
+            document.getElementById('religionInfo').innerHTML = `<p>Learning about ${selected} – details and videos coming soon. Use AI Copilot for questions.</p>`;
+        }
+    </script>
+}
 </body>
 </html>
