@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About EduOS</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision – EduOS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 </head>
 <body>
-  <!-- Paste your shared header/nav code here from index.html -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li>Programs:
+                    <ul>
+                        <li><a href="primary.html">Primary Excellence</a></li>
+                        <li><a href="secondary.html">Secondary Scholars</a></li>
+                        <li><a href="military.html">Military Leadership</a></li>
+                        <li><a href="sports.html">Elite Athletics & Wellness</a></li>
+                        <li><a href="music.html">Conservatory of Arts</a></li>
+                    </ul>
+                </li>
+                <li><a href="parents.html">Parent Command</a></li>
+                <li><a href="pricing.html">Plans & Access</a></li>
+                <li><a href="about.html">Vision</a></li>
+                <li><button id="darkModeToggle">Dark Mode</button></li>
+                <li><button id="loginBtn">Login / Sign Up</button></li>
+                <li><button id="aiChatBtn">AI Copilot Chat</button></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <h1>About EduOS</h1>
-      <p>EduOS is a premium digital education platform inspired by Ivy League rigor, built in Abuja, Nigeria, and designed for students around the world.</p>
-      <p>We combine AI personalization, parental oversight, global recognition, and timeless academic tradition to create a learning experience of distinction.</p>
-      <p>From primary excellence to military leadership and world religions education — EduOS is where future leaders are forged.</p>
-    </section>
-  </main>
+    <main>
+        <h1>Our Vision</h1>
+        <p>EduOS brings Harvard-level education to the world from Abuja, with AI personalization for every learner.</p>
+    </main>
 
-  <footer>© 2026 EduOS</footer>
-  <script src="script.js"></script>
+    <footer>
+        <p>EduOS: Built in Abuja for the World</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
