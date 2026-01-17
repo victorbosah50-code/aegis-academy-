@@ -1,122 +1,93 @@
-<!-- index.html – Main Landing Page (Harvard-Inspired Digital Prestige) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EduOS – Harvard-Level Digital Education Operating System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduOS – Premium Digital Education</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
 </head>
 <body>
-
-  <!-- Premium Navigation – Clean, Mega-Menu Style like Harvard -->
-  <nav class="navbar">
-    <div class="logo">
-      <span class="logo-text">Edu<span class="highlight">OS</span></span>
-    </div>
-
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="academy.html">Academy</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Programs</a>
-        <div class="dropdown-content">
-          <a href="primary.html">Primary Excellence</a>
-          <a href="secondary.html">Secondary Scholars</a>
-          <a href="military.html">Military Leadership Academy</a>
-          <a href="sports.html">Elite Athletics & Wellness</a>
-          <a href="music.html">Conservatory of Arts</a>
-        </div>
-      </li>
-      <li><a href="parents.html">Parent Command</a></li>
-      <li><a href="pricing.html">Plans & Access</a></li>
-      <li><a href="about.html">Vision</a></li>
-    </ul>
-
-    <div class="nav-actions">
-      <a href="pricing.html" class="btn btn-outline">Request Private Demo</a>
-      <a href="pricing.html" class="btn btn-primary">Begin Journey</a>
-    </div>
-  </nav>
-
-  <!-- Hero – Grand, Prestigious like Harvard's Front Page -->
-  <header class="hero">
-    <div class="hero-content">
-      <div class="eyebrow">Excellence in Digital Education</div>
-      <h1>EduOS</h1>
-      <h2 class="subtitle">The Digital Operating System Inspired by Ivy League Tradition</h2>
-      <p class="hero-tagline">Award-worthy platform blending Harvard-level rigor with modern AI, personalization, and accessibility – for top-rank learning worldwide.</p>
-      <div class="hero-cta">
-        <a href="pricing.html" class="btn btn-primary btn-large">Start Your Legacy</a>
-        <a href="academy.html" class="btn btn-outline btn-large">Explore Programs</a>
+  <header>
+    <nav>
+      <div class="logo">EduOS</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li class="dropdown">
+          <a href="#">Programs</a>
+          <ul class="dropdown-content">
+            <li><a href="military.html">Military Leadership</a></li>
+            <li><a href="religions.html">World Religions</a></li>
+          </ul>
+        </li>
+        <li><a href="parent-dashboard.html">Parents</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div>
+        <button id="darkModeToggle">Dark Mode</button>
+        <button id="loginBtn">Sign In</button>
+        <button id="aiChatBtn">AI Copilot</button>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- Trust Section – Academic Credentials & Awards Feel -->
-  <section class="section trust-bar">
-    <div class="container">
-      <div class="trust-items">
-        <div>Ivy League-Inspired Curricula</div>
-        <div>Award-Winning Design</div>
-        <div>Top-Rank Accessibility</div>
-        <div>Global Institutional Partners</div>
-        <div>Trophy-Worthy Innovation</div>
-      </div>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>EduOS</h1>
+      <h2>World-class digital education from Abuja</h2>
+      <p>Personalized paths in academics, leadership, arts, sports, military, and world religions</p>
+      <!-- Replace with your Vidnoz/YouTube embed after creation -->
+      <iframe width="640" height="360" src="YOUR_VIDEO_EMBED_URL_HERE" title="Welcome to EduOS" frameborder="0" allowfullscreen></iframe>
+      <button id="enrollBtn">Start Learning</button>
+    </section>
 
-  <!-- Features – Elegant, Grid-Based like Harvard Sections -->
-  <section class="section features">
-    <div class="container">
-      <h2 class="section-title">The Pinnacle of Digital Learning</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h3>Personalized Mastery Paths</h3>
-          <p>AI-driven curricula tailored to each scholar's potential, echoing Harvard's individualized excellence.</p>
+    <section id="pricing">
+      <h2>Choose Your Plan</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Basic</h3>
+          <div class="price">₦5,000 <small>one-time</small></div>
+          <button onclick="pay('basic','stripe')">Stripe (Google Pay)</button>
+          <button onclick="pay('basic','paystack')">Paystack</button>
         </div>
-        <div class="feature-card">
-          <h3>Parental Oversight Suite</h3>
-          <p>Elegant dashboards for monitoring progress, with privacy standards worthy of elite institutions.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Global Recognition System</h3>
-          <p>Award and trophy tracking integrated, preparing students for Ivy League admissions.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Institutional Scalability</h3>
-          <p>Platform designed for top-rank schools, governments, and families – robust and refined.</p>
+        <div class="plan featured">
+          <h3>Premium</h3>
+          <div class="price">₦20,000 <small>/month</small></div>
+          <button onclick="pay('premium','stripe')">Stripe (Google Pay)</button>
+          <button onclick="pay('premium','paystack')">Paystack</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- CTA – Call to Prestige -->
-  <section class="section cta-final">
-    <div class="container">
-      <h2>Join the Ranks of Excellence</h2>
-      <p class="large">EduOS: Where digital innovation meets timeless academic distinction.</p>
-      <a href="pricing.html" class="btn btn-primary btn-large">Enroll in Distinction</a>
-    </div>
-  </section>
+  <!-- Modals -->
+  <div id="authModal" class="modal"><div class="modal-content">
+    <span class="close">×</span>
+    <h2>Sign In / Sign Up</h2>
+    <input id="email" type="email" placeholder="Email" required>
+    <input id="password" type="password" placeholder="Password" required>
+    <label><input type="checkbox" id="ageConsent"> I am 13+ or have parent permission</label>
+    <button onclick="signUp()">Create Account</button>
+    <button onclick="login()">Sign In</button>
+    <button onclick="googleSignIn()">Continue with Google</button>
+  </div></div>
 
-  <!-- Footer – Classic & Authoritative -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="logo">Edu<span class="highlight">OS</span></div>
-        <p>Digital Excellence Inspired by Tradition</p>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 EduOS – All Rights Reserved</p>
-        <p class="disclaimer">Crafted for the Elite Pursuit of Knowledge</p>
-      </div>
-    </div>
-  </footer>
+  <div id="aiModal" class="modal"><div class="modal-content">
+    <span class="close">×</span>
+    <h2>EduOS AI Copilot</h2>
+    <textarea id="aiQuery" placeholder="Ask about homework, leadership, religions, discipline..." rows="4"></textarea>
+    <button onclick="askAI()">Ask AI</button>
+    <div id="aiResponse" class="response-box"></div>
+  </div></div>
 
-  <script src="app.js"></script>
+  <footer>© 2026 EduOS – Built in Abuja for the World</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
