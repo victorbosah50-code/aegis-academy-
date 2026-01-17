@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course View – EduOS</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course View – EduOS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-body {
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li>Programs:
-                    <ul>
-                        <li><a href="primary.html">Primary Excellence</a></li>
-                        <li><a href="secondary.html">Secondary Scholars</a></li>
-                        <li><a href="military.html">Military Leadership</a></li>
-                        <li><a href="sports.html">Elite Athletics & Wellness</a></li>
-                        <li><a href="music.html">Conservatory of Arts</a></li>
-                    </ul>
-                </li>
-                <li><a href="parents.html">Parent Command</a></li>
-                <li><a href="pricing.html">Plans & Access</a></li>
-                <li><a href="about.html">Vision</a></li>
-                <li><button id="darkModeToggle">Dark Mode</button></li>
-                <li><button id="loginBtn">Login / Sign Up</button></li>
-                <li><button id="aiChatBtn">AI Copilot Chat</button></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+  <header>
+    <nav>
+      <div class="logo">EduOS</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academy.html">Academy</a></li>
+        <li class="dropdown">
+          <a href="#">Programs ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="primary.html">Primary Excellence</a></li>
+            <li><a href="secondary.html">Secondary Scholars</a></li>
+            <li><a href="military.html">Military Leadership</a></li>
+            <li><a href="sports.html">Elite Athletics & Wellness</a></li>
+            <li><a href="music.html">Conservatory of Arts</a></li>
+            <li><a href="religions.html">World Religions</a></li>
+          </ul>
+        </li>
+        <li><a href="parents.html">Parent Command</a></li>
+        <li><a href="pricing.html">Plans & Access</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <button id="darkModeToggle">Dark Mode</button>
+        <button id="loginBtn">Sign In</button>
+        <button id="aiChatBtn">AI Copilot</button>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <h1 id="courseTitle">Loading...</h1>
-        <div id="modules"></div>
-        <button onclick="generateCertificate()">Get Certificate</button>
-    </main>
+  <main>
+    <section class="hero">
+      <h1 id="courseTitle">Course Loading...</h1>
+      <p id="courseDesc">Description loading...</p>
+    </section>
 
-    <footer>
-        <p>EduOS: Built in Abuja for the World</p>
-    </footer>
+    <section class="content">
+      <div id="modules">
+        <!-- Modules and videos will load here via JS if Firebase is added -->
+        <p>Content coming soon – personalized lessons for your child!</p>
+      </div>
+      <button onclick="generateCertificate()">Download Certificate</button>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-}
+  <footer>
+    <p>© 2026 EduOS – Built in Abuja for the World</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Stub for course loading – expand with Firebase later
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get('id') || 'default';
+      document.getElementById('courseTitle').textContent = id.replace('-', ' ').toUpperCase();
+      document.getElementById('courseDesc').textContent = 'Personalized learning path for this program.';
+    });
+
+    function generateCertificate() {
+      alert('Certificate generated! (Full PDF with jsPDF in future)');
+    }
+  </script>
 </body>
 </html>
