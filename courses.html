@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses – EduOS</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses – EduOS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 </head>
-<body>
-  <!-- Header/nav same as index -->
+body {
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li>Programs:
+                    <ul>
+                        <li><a href="primary.html">Primary Excellence</a></li>
+                        <li><a href="secondary.html">Secondary Scholars</a></li>
+                        <li><a href="military.html">Military Leadership</a></li>
+                        <li><a href="sports.html">Elite Athletics & Wellness</a></li>
+                        <li><a href="music.html">Conservatory of Arts</a></li>
+                    </ul>
+                </li>
+                <li><a href="parents.html">Parent Command</a></li>
+                <li><a href="pricing.html">Plans & Access</a></li>
+                <li><a href="about.html">Vision</a></li>
+                <li><button id="darkModeToggle">Dark Mode</button></li>
+                <li><button id="loginBtn">Login / Sign Up</button></li>
+                <li><button id="aiChatBtn">AI Copilot Chat</button></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h1>Available Courses</h1>
-    <div id="courseList"></div>
-  </main>
+    <main>
+        <h1>Courses</h1>
+        <div id="courseList"></div>
+    </main>
 
-  <script src="script.js"></script>
-  <script>
-    auth.onAuthStateChanged(user => {
-      if (user) {
-        db.collection('courses').get().then(snapshot => {
-          const list = document.getElementById('courseList');
-          snapshot.forEach(doc => {
-            const data = doc.data();
-            const div = document.createElement('div');
-            div.innerHTML = `<h3>${data.title}</h3><button onclick="viewCourse('${doc.id}')">View Course</button>`;
-            list.appendChild(div);
-          });
-        });
-      } else {
-        document.getElementById('courseList').innerHTML = '<p>Please sign in to view courses.</p>';
-      }
-    });
+    <footer>
+        <p>EduOS: Built in Abuja for the World</p>
+    </footer>
 
-    function viewCourse(id) {
-      window.location.href = `course-view.html?id=${id}`;
-    }
-  </script>
+    <script src="script.js"></script>
+}
 </body>
 </html>
