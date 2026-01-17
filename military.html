@@ -1,87 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Military Leadership Academy – EduOS</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 </head>
 <body>
+  <!-- Paste same header/nav from index.html here -->
 
-  <nav class="navbar">
-    <!-- same navigation -->
-    <div class="logo"><span class="logo-text">Edu<span class="highlight">OS</span></span></div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="academy.html">Academy</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Programs</a>
-        <div class="dropdown-content">
-          <a href="primary.html">Primary Excellence</a>
-          <a href="secondary.html">Secondary Scholars</a>
-          <a href="military.html" class="active">Military Leadership Academy</a>
-          <a href="sports.html">Elite Athletics & Wellness</a>
-          <a href="music.html">Conservatory of Arts</a>
-        </div>
-      </li>
-      <li><a href="parents.html">Parent Command</a></li>
-      <li><a href="pricing.html">Plans & Access</a></li>
-      <li><a href="about.html">Vision</a></li>
-    </ul>
-    <div class="nav-actions">
-      <a href="pricing.html" class="btn btn-outline">Request Private Demo</a>
-      <a href="pricing.html" class="btn btn-primary">Begin Journey</a>
-    </div>
-  </nav>
-
-  <header class="hero hero-sub">
-    <div class="hero-content">
-      <div class="eyebrow">Command Formation</div>
+  <main>
+    <section class="hero">
       <h1>Military Leadership Academy</h1>
-      <h2 class="subtitle">Forging principled leaders for decisive moments</h2>
-    </div>
-  </header>
+      <p>Develop strategic thinking, discipline, and leadership – Navy, Airforce, Intelligence tracks</p>
+    </section>
 
-  <section class="section features">
-    <div class="container">
-      <h2 class="section-title">Core Pillars of Distinction</h2>
-
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h3>Strategic Decision Architecture</h3>
-          <p>Advanced scenario simulation and war-game methodology for real-world complexity.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Moral & Ethical Command Training</h3>
-          <p>Deliberate cultivation of integrity and principled decision-making under extreme pressure.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Extreme Resilience Development</h3>
-          <p>Physical, mental, and emotional conditioning protocols used by global elite forces.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Officer Candidate Pathway</h3>
-          <p>Direct preparation for the world's most selective military academies and leadership programs.</p>
-        </div>
+    <section class="content">
+      <div class="track">
+        <h3>Navy Track</h3>
+        <p>Seamanship, maritime strategy, naval history</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4fb7q-izEIw" frameborder="0" allowfullscreen></iframe>
       </div>
-    </div>
-  </section>
 
-  <section class="section cta-final">
-    <div class="container">
-      <h2>Develop Leaders Who Will Shape History</h2>
-      <p class="large">True command begins with self-mastery.</p>
-      <a href="pricing.html" class="btn btn-primary btn-large">Enter the Leadership Academy</a>
-    </div>
-  </section>
+      <div class="track">
+        <h3>Airforce Track</h3>
+        <p>Aviation, air power, flight simulation</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IWxsEb4nRAU" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-  <footer class="footer">
-    <!-- same footer -->
-  </footer>
+      <div class="track">
+        <h3>Intelligence Track</h3>
+        <p>Analysis, cybersecurity, strategic foresight</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qwA6MmbeGNo" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-  <script src="app.js"></script>
+      <button onclick="window.location.href='index.html#pricing'">Enroll in Military Track</button>
+    </section>
+  </main>
+
+  <footer>© 2026 EduOS</footer>
+  <script src="script.js"></script>
 </body>
 </html>
